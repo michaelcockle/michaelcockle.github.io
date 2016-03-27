@@ -1,0 +1,22 @@
+{
+  "name": "michaelcockle.github.io",
+  "version": "1.0.0",
+  "description": "my website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelcockle/michaelcockle.github.io.git"
+  },
+  "author": "Michael Cockle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelcockle/michaelcockle.github.io/issues"
+  },
+  "homepage": "https://github.com/michaelcockle/michaelcockle.github.io#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
