@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3a3a4a;
+    font-family: sans-serif;
+    padding: 20px;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    margin-bottom: 30px;
+    li {
+        list-style: none;
+        a {
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+    }
+}
+
+.active {
+    border: solid 1px white;
+}
+
+.main-wrap {
+    padding: 20px;
+}
+
+li, p, span, a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+
+    }
+}
+
+h1, h2 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+
+
+
+

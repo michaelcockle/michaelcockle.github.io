@@ -1,7 +1,7 @@
 {
-  "name": "michaelcockle.github.io",
-  "version": "1.0.0",
-  "description": "my website",
+  "name": "Template",
+  "version": "1.2.0",
+  "description": "Template Boilerplate",
   "main": "index.js",
   "scripts": {
     "test": "karma start",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michaelcockle/michaelcockle.github.io.git"
+    "url": ""
   },
   "author": "Michael Cockle",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/michaelcockle/michaelcockle.github.io/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/michaelcockle/michaelcockle.github.io#readme",
+  "homepage": "",
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
     "axios": "^0.16.2",
