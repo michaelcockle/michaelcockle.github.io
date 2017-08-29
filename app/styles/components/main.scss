@@ -7,6 +7,14 @@ body {
     font-family: sans-serif;
     padding: 20px;
     color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+a {
+    font-size: 14px;
+
 }
 
 .nav {
@@ -51,6 +59,17 @@ h1, h2 {
 }
 
 
+.job {
 
+    a {
+
+        border: solid 1px white;
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+    img {
+        max-width: 100px;
+    }
+}
 
 

@@ -8,7 +8,7 @@ require('./styles/app.scss');
  * */
 
 let Main     = require('./components/Main');
-let Template = require('./components/Template');
+let Template = require('./components/Home');
 let About    = require('./components/About');
 let Examples = require('./components/Examples');
 
