@@ -2,6 +2,13 @@ let React               = require('react');
 let ReactDOM            = require('react-dom');
 let {Link, IndexLink}   = require('react-router');
 
+//import React from 'react'
+//import ReactDOM from 'react-dom'
+//import Link, IndexLink  from 'react-router'
+//import {Link, IndexLink} from 'react-router'
+
+
+
 let Nav = React.createClass({
     render: function () {
         return (
@@ -23,3 +30,4 @@ let Nav = React.createClass({
 });
 
 module.exports = Nav;
+//export default Nav

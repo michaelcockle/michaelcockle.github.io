@@ -2,6 +2,10 @@ let React    = require('react');
 let ReactDOM = require('react-dom');
 let axios    = require('axios');
 
+//import React from 'react'
+//import ReactDOM from 'react-dom'
+//import axios from 'axios'
+
 //let _        = require('lodash');
 
 let AxiosAjax = React.createClass({
@@ -66,19 +70,34 @@ let AxiosAjax = React.createClass({
 
 });
 
+let MyCopy = React.createClass({
+   render: function () {
+       return (
+           <div>
+                <h1>Map Filter Reduce</h1>
+           </div>
+       );
+   }
+});
+
+
+
 let MapFilterReduce = React.createClass({
 
     render: function () {
         return (
             <div>
-                <p>MapFilterReduce</p>
+
+                <MyCopy/>
+
                 <AxiosAjax/>
             </div>
         )
     }
 });
-module.exports      = MapFilterReduce;
 
+module.exports      = MapFilterReduce;
+//export default MapFilterReduce
 
 
 

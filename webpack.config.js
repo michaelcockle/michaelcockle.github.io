@@ -1,4 +1,7 @@
+var path = require('path');
+
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
@@ -34,7 +37,9 @@ module.exports = {
                     /\.jsx?$/
                 ],
 
-                exclude: /node_modules/,
+                //exclude: /node_modules/,
+                //include: /app/,
+                include: path.resolve(__dirname, 'app'),
                 use:     "babel-loader"
             },
 
