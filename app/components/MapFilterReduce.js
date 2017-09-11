@@ -49,12 +49,8 @@ let AxiosAjax = React.createClass({
             return (
                 <div key={value} className="job">
                     <a href={job.url}>
-                        {value} &nbsp; &nbsp;
-                        {job.company_name} &nbsp; &nbsp;
-                        {job.term} &nbsp; &nbsp;
-                        {job.title} &nbsp; &nbsp;
-                        <img src={job.img} alt=""/>
-                    </a>
+                        {value} &nbsp; &nbsp;{job.company_name} &nbsp; &nbsp;{job.term} &nbsp; &nbsp;{job.title} &nbsp; &nbsp;
+                        <img src={job.img} alt=""/> </a>
                     <p>{job.description}</p>
                 </div>
             );
@@ -62,8 +58,7 @@ let AxiosAjax = React.createClass({
 
         return (
             <div>
-                <h1>Jobs!</h1>
-                {iterateOverJobs}
+                <h1>Jobs!</h1>{iterateOverJobs}
             </div>
         )
     }
@@ -71,16 +66,14 @@ let AxiosAjax = React.createClass({
 });
 
 let MyCopy = React.createClass({
-   render: function () {
-       return (
-           <div>
+    render: function () {
+        return (
+            <div>
                 <h1>Map Filter Reduce</h1>
-           </div>
-       );
-   }
+            </div>
+        );
+    }
 });
-
-
 
 let MapFilterReduce = React.createClass({
 
@@ -96,7 +89,7 @@ let MapFilterReduce = React.createClass({
     }
 });
 
-module.exports      = MapFilterReduce;
+module.exports = MapFilterReduce;
 //export default MapFilterReduce
 
 

@@ -37,9 +37,7 @@ module.exports = {
                     /\.jsx?$/
                 ],
 
-                //exclude: /node_modules/,
-                //include: /app/,
-                include: path.resolve(__dirname, 'app'),
+                exclude: /node_modules/,
                 use:     "babel-loader"
             },
 
@@ -47,26 +45,27 @@ module.exports = {
              * Load inline styles
              * */
 
-            {
-                test:    [
-                    /\.scss$/
-                ],
+            //{
+            //    test:    [
+            //        /\.scss$/
+            //    ],
+            //
+            //    exclude: /node_modules/,
+            //    loader:  "style-loader!css-loader!autoprefixer-loader!sass-loader"
+            //},
 
-                exclude: /node_modules/,
-                loader:  "style-loader!css-loader!autoprefixer-loader!sass-loader"
-            },
-
-            {
-                test: /\.css$/,
-                exclude: /node_modules/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    loader: 'css-loader'
-                }),
-            },
+            //{
+            //    test: /\.css$/,
+            //    exclude: /node_modules/,
+            //    use: ExtractTextPlugin.extract({
+            //        fallback: 'style-loader',
+            //        loader: 'css-loader'
+            //    }),
+            //},
 
             /*
              * Inject style sheet
+             * */
 
             {
                 test:    [
@@ -83,7 +82,6 @@ module.exports = {
                 })
 
             }
-             * */
 
         ]
     },
