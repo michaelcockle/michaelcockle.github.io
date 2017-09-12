@@ -1,10 +1,10 @@
-let React    = require('react');
-let ReactDOM = require('react-dom');
-let axios    = require('axios');
-
-//import React from 'react'
-//import ReactDOM from 'react-dom'
-//import axios from 'axios'
+import React from 'react'
+import axios from 'axios';
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from 'react-router-dom'
 
 //let _        = require('lodash');
 
@@ -89,8 +89,7 @@ let MapFilterReduce = React.createClass({
     }
 });
 
-module.exports = MapFilterReduce;
-//export default MapFilterReduce
+export default MapFilterReduce
 
 
 

@@ -18,8 +18,10 @@ const BasicExample = () => (
 
             <hr/>
 
-            <Route exact path="/" component={Home}/> <Route path="/about" component={About}/>
-            <Route path="/topics" component={Topics}/> <Route path="/map" component={MapFilterReduce}/>
+            <Route exact path="/" component={Home}/>
+            <Route path="/about" component={About}/>
+            <Route path="/topics" component={Topics}/>
+            <Route path="/map" component={MapFilterReduce}/>
         </div>
     </Router>
 )
