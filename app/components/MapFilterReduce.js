@@ -6,8 +6,6 @@ import {
     Link
 } from 'react-router-dom'
 
-//let _        = require('lodash');
-
 let AxiosAjax = React.createClass({
 
     getInitialState: function () {
@@ -39,8 +37,11 @@ let AxiosAjax = React.createClass({
     componentWillUnmount: function () {
 
         console.log('componentWillUnmount');
+
         //If Ajax request is still going when React (or you) removes component, the Ajax request will be aborted
-        this.serverRequest.abort();
+
+
+        //this.serverRequest.abort(); // Errors
     },
 
     render: function () {
@@ -65,24 +66,11 @@ let AxiosAjax = React.createClass({
 
 });
 
-let MyCopy = React.createClass({
-    render: function () {
-        return (
-            <div>
-                <h1>Map Filter Reduce</h1>
-            </div>
-        );
-    }
-});
-
 let MapFilterReduce = React.createClass({
 
     render: function () {
         return (
             <div>
-
-                <MyCopy/>
-
                 <AxiosAjax/>
             </div>
         )
