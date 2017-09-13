@@ -9,6 +9,7 @@ import {
 const BasicExample = () => (
     <Router>
         <div>
+
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
@@ -29,6 +30,7 @@ const BasicExample = () => (
 const Home = () => (
     <div>
         <h2>Home</h2>
+        <Link to='/topics'>Link to Map</Link>
     </div>
 )
 
