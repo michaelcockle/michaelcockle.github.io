@@ -3,7 +3,7 @@
 }
 $font-light: 300;
 $font-regular: 400;
-$font-bold: 700;
+$font-bold: 600;
 
 body {
 
@@ -15,14 +15,24 @@ body {
     color: white;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: $font-light;
     font-weight: $font-bold;
     font-weight: $font-regular;
+    font-weight: $font-light;
 }
 
 h1, h2, h3 {
     font-weight: $font-bold;
     color: yellow;
+}
+
+ul {
+    li {
+        list-style: none;
+    }
+}
+
+img {
+    max-width: 100%;
 }
 
 a {

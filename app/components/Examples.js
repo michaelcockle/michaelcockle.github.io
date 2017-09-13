@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import preload from '../../data/data-netflix.json'
 import {
     BrowserRouter as Router,
     Route,
@@ -12,7 +11,6 @@ let Examples = React.createClass({
         return (
             <div className='component-examples'>
                 <p>Work</p>
-                <pre><code>{JSON.stringify(preload, null, 4)}</code></pre>
             </div>
         )
     }

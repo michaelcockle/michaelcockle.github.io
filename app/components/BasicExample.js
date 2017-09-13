@@ -1,6 +1,7 @@
 import React from 'react'
 import MapFilterReduce from './MapFilterReduce'
 import Examples from './Examples'
+import Home from './Home'
 import {
     BrowserRouter as Router,
     Route,
@@ -28,12 +29,7 @@ const BasicExample = () => (
     </Router>
 )
 
-const Home = () => (
-    <div>
-        <h2>Home</h2>
-        <Link to='/topics'>Link to Map</Link>
-    </div>
-)
+
 
 const About = () => (
     <div>
