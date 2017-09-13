@@ -1,5 +1,6 @@
 import React from 'react'
 import MapFilterReduce from './MapFilterReduce'
+import Examples from './Examples'
 import {
     BrowserRouter as Router,
     Route,
@@ -15,14 +16,14 @@ const BasicExample = () => (
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/topics">Topics</Link></li>
                 <li><Link to="/map">Map</Link></li>
+                <li><Link to="/examples">Examples</Link></li>
             </ul>
 
             <hr/>
 
-            <Route exact path="/" component={Home}/>
-            <Route path="/about" component={About}/>
-            <Route path="/topics" component={Topics}/>
-            <Route path="/map" component={MapFilterReduce}/>
+            <Route exact path="/" component={Home}/> <Route path="/about" component={About}/>
+            <Route path="/topics" component={Topics}/> <Route path="/map" component={MapFilterReduce}/>
+            <Route path="/examples" component={Examples}/>
         </div>
     </Router>
 )

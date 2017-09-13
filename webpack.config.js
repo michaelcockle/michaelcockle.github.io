@@ -40,7 +40,10 @@ module.exports = {
                 exclude: /node_modules/,
                 use:     "babel-loader"
             },
-
+            {
+                test: /\.json$/,
+                use:  'json-loader'
+            },
             /*
              * Load inline styles
              * */
@@ -68,18 +71,20 @@ module.exports = {
              * */
 
             {
-                test:    [
+                test: [
                     /\.scss$/
                 ],
-                exclude: /node_modules/,
-                use:     ExtractTextPlugin.extract({
-                    fallback: "style-loader",
-                    //use: ['css-loader', 'sass-loader']
-                    //use: ['style-loader','css-loader','autoprefixer-loader','sass-loader']
-                    //use:  "style-loader!css-loader!autoprefixer-loader!sass-loader"
-                    //use:  "css-loader!autoprefixer-loader!sass-loader"
-                    use:      ['css-loader', 'autoprefixer-loader', 'sass-loader']
-                })
+                exclude:
+                      /node_modules/,
+                use:
+                      ExtractTextPlugin.extract({
+                          fallback: "style-loader",
+                          //use: ['css-loader', 'sass-loader']
+                          //use: ['style-loader','css-loader','autoprefixer-loader','sass-loader']
+                          //use:  "style-loader!css-loader!autoprefixer-loader!sass-loader"
+                          //use:  "css-loader!autoprefixer-loader!sass-loader"
+                          use:      ['css-loader', 'autoprefixer-loader', 'sass-loader']
+                      })
 
             }
 
@@ -87,6 +92,8 @@ module.exports = {
     },
     devtool:   '#inline-source-map',
     //devtool:   'source-map',
-    plugins:   [HTMLWebpackPluginConfig, SASSWebpackPluginConfig]
+    plugins:
+               [HTMLWebpackPluginConfig, SASSWebpackPluginConfig]
     //plugins:   [HTMLWebpackPluginConfig]
-};
+}
+;

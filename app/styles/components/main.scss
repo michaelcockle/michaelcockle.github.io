@@ -1,15 +1,28 @@
 * {
     box-sizing: border-box;
 }
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+
+body {
+
+}
 
 body {
     background-color: #3a3a4a;
-    font-family: sans-serif;
     padding: 20px;
     color: white;
-    font-family: Helvetica, sans-serif;
     font-size: 16px;
-    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: $font-light;
+    font-weight: $font-bold;
+    font-weight: $font-regular;
+}
+
+h1, h2, h3 {
+    font-weight: $font-bold;
+    color: yellow;
 }
 
 a {
