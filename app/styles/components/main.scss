@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 $font-light: 300;
 $font-regular: 400;
 $font-bold: 600;
@@ -81,7 +82,6 @@ h1, h2 {
     margin: 0 0 10px 0;
 }
 
-
 .job {
 
     a {
@@ -95,4 +95,17 @@ h1, h2 {
     }
 }
 
+.show-card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    .show-card-img-wrap {
+        padding: 1rem;
 
+    }
+    .show-card {
+        flex: 0 0 25%;
+    }
+    .show-copy-wrap {
+        padding: 1rem;
+    }
+}
