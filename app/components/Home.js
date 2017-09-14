@@ -14,7 +14,7 @@ let Home = React.createClass({
             <div>
                 <Link to='/topics'>Link to Map</Link> {preload.shows.map((show) => {
                 return (
-                    <ShowCard key={show.imdbID} show={show}/>
+                    <ShowCard key={show.imdbID} {...show}/>
                 )
             })}
             </div>
