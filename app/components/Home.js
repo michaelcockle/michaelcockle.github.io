@@ -12,8 +12,6 @@ let Home = React.createClass({
     render: function () {
         return (
             <div>
-                <p>Home</p>
-                {/*<pre><code>{JSON.stringify(preload, null, 4)}</code></pre>*/}
                 <Link to='/topics'>Link to Map</Link> {preload.shows.map((show) => {
                 return (
                     <ShowCard key={show.imdbID} show={show}/>
