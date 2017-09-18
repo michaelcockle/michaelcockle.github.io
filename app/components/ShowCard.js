@@ -1,8 +1,10 @@
 import React from 'react'
+import {shape, string} from 'prop-types'
 
 const { string } = React.PropTypes
 
 const ShowCard = React.createClass({
+
     propTypes: {
         poster: string,
         title: string,
@@ -15,7 +17,7 @@ const ShowCard = React.createClass({
         return (
             <div className="show-card">
                 <div className="show-card-img-wrap">
-                    <img src={`/dist/img/posters/${poster}`} />
+                    <img src={`/dist/img/posters/${poster}`} alt={`${title}`} />
                 </div>
                 <div className="show-copy-wrap">
                     <h3>{title}</h3>

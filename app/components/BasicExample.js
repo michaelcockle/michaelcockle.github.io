@@ -27,9 +27,9 @@ const BasicExample = () => (
 
             <hr />
             <Switch>
-                <Route exact path="/" component={Home} />{' '}
+                <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
-                <Route path="/topics" component={Topics} />{' '}
+                <Route path="/topics" component={Topics} />
                 <Route path="/map" component={MapFilterReduce} />
                 <Route path="/examples" component={Examples} />
                 <Route component={FourOhFour}></Route>
@@ -52,8 +52,7 @@ const Topics = ({ match }) => (
         <ul>
             <li>
                 <Link to={`${match.url}/rendering`}>
-                    {' '}
-                    Rendering with React{' '}
+                    Rendering with React
                 </Link>
             </li>
             <li>
@@ -63,7 +62,7 @@ const Topics = ({ match }) => (
                 <Link to={`${match.url}/props-v-state`}> Props v. State </Link>
             </li>
         </ul>
-        <Route path={`${match.url}/:topicId`} component={Topic} />{' '}
+        <Route path={`${match.url}/:topicId`} component={Topic} />
         <Route
             exact
             path={match.url}
