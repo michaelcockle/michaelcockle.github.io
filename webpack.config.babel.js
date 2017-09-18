@@ -16,7 +16,12 @@ let SASSWebpackPluginConfig = new ExtractTextPlugin({
 });
 
 module.exports = {
-    devServer: {inline: true},
+    devServer: {
+        inline: true,
+        publicPath: '/',
+        historyApiFallback: true
+
+    },
     entry:     [
         './app/index.js'
     ],
@@ -26,7 +31,7 @@ module.exports = {
         filename: "index_bundle.js"
     },
     resolve:   {
-        extensions: ['*', '.js', '.jsx', '.css', '.scss']
+        extensions: ['*', '.js', '.jsx', '.css', '.scss', '.json']
         //extensions: ['*', '.js', '.jsx']
     },
     module:    {
