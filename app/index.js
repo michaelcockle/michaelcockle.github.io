@@ -11,22 +11,6 @@ require('./styles/app.scss');
 
 ReactDOM.render(<BasicExample/>, document.getElementById('app'))
 
-//import ReactDOM from 'react-dom'
-//import MapFilterReduce from './MapFilterReduce'
-//export default Home
-
-//let React                                    = require('react');
-//let ReactDOM                                 = require('react-dom');
-//let {Route, Router, IndexRoute, hashHistory} = require('react-router');
-// App css
-/*
- * Components
- * */
-
-//let Main     = require('./components/Main');
-//let Template = require('./components/Home');
-//let About    = require('./components/About');
-//let Examples = require('./components/Examples');
 
 //ReactDOM.render(
 //    <Router history={hashHistory}>
@@ -38,10 +22,6 @@ ReactDOM.render(<BasicExample/>, document.getElementById('app'))
 //    </Router>,
 //    document.getElementById('app')
 //);
-
-/*
- * ---------
- * */
 
 
 

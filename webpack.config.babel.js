@@ -1,16 +1,16 @@
-var path = require('path');
+let path = require('path');
 
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
 
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+let ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
+let HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
     template: __dirname + '/app/index.html',
     filename: 'index.html',
     inject:   'body',
 });
 
-var SASSWebpackPluginConfig = new ExtractTextPlugin({
+let SASSWebpackPluginConfig = new ExtractTextPlugin({
     filename:  "main.css",
     allChunks: true
 });

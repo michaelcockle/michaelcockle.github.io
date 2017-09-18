@@ -109,3 +109,14 @@ h1, h2 {
         padding: 1rem;
     }
 }
+
+.component {
+    display: flex;
+    &__car {
+        background-color: blue;
+    }
+    &__bike {
+        background-color: red;
+
+    }
+}
