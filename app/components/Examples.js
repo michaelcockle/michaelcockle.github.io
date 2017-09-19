@@ -16,4 +16,4 @@ let Examples = React.createClass({
     }
 });
 
-export default Examples
+export default Examplesse
