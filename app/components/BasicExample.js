@@ -32,7 +32,7 @@ const BasicExample = () => (
                 <Route path="/topics" component={Topics} />
                 <Route path="/map" component={MapFilterReduce} />
                 <Route path="/examples" component={Examples} />
-                <Route component={FourOhFour}></Route>
+                <Route component={FourOhFour} />
             </Switch>
         </div>
     </Router>
@@ -51,9 +51,7 @@ const Topics = ({ match }) => (
         <h2>Topics</h2>
         <ul>
             <li>
-                <Link to={`${match.url}/rendering`}>
-                    Rendering with React
-                </Link>
+                <Link to={`${match.url}/rendering`}>Rendering with React</Link>
             </li>
             <li>
                 <Link to={`${match.url}/components`}> Components </Link>

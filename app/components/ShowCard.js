@@ -1,16 +1,16 @@
 import React from 'react'
-import {shape, string} from 'prop-types'
+//import {shape, string} from 'prop-types'
 
-const { string } = React.PropTypes
+//const { string } = React.PropTypes
 
 const ShowCard = React.createClass({
 
-    propTypes: {
-        poster: string,
-        title: string,
-        year: string,
-        description: string,
-    },
+    //propTypes: {
+    //    poster: string,
+    //    title: string,
+    //    year: string,
+    //    description: string
+    //},
 
     render() {
         const { poster, title, year, description } = this.props
