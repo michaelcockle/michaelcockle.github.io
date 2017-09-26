@@ -4,19 +4,15 @@ import ShowCard from './ShowCard'
 import preload from '../../data/data-netflix.json'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
-//let Home = React.createClass({
 class Home extends Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            searchTerm: '',
-        }
-    }
+    state = {
+        searchTerm: ''
+    };
 
     handleSearchTermChange = (event) => {
         this.setState({ searchTerm: event.target.value })
-    }
+    };
 
     render() {
         return (
@@ -24,12 +20,13 @@ class Home extends Component {
                 <header>
                     <h1>{this.state.searchTerm}</h1>
                     <input
-                        onChange={this.handleSearchTermChange.bind(this)}
+                        onChange={this.handleSearchTermChange}
                         value={this.state.searchTerm}
                         type="text"
                         placeholder="Search"
                     />
                 </header>
+
                 <p>
                     <Link to="/topics">Link to Map</Link>
                 </p>
