@@ -1,27 +1,30 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import ShowCard from './ShowCard'
 import preload from '../../data/data-netflix.json'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
-let Home = React.createClass({
-    getInitialState() {
-        return {
+//let Home = React.createClass({
+class Home extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
             searchTerm: '',
         }
-    },
+    }
 
-    handleSearchTermChange(event) {
+    handleSearchTermChange = (event) => {
         this.setState({ searchTerm: event.target.value })
-    },
+    }
 
-    render: function() {
+    render() {
         return (
             <div>
                 <header>
                     <h1>{this.state.searchTerm}</h1>
                     <input
-                        onChange={this.handleSearchTermChange}
+                        onChange={this.handleSearchTermChange.bind(this)}
                         value={this.state.searchTerm}
                         type="text"
                         placeholder="Search"
@@ -48,8 +51,8 @@ let Home = React.createClass({
                 </div>
             </div>
         )
-    },
-})
+    }
+}
 
 export default Home
 
