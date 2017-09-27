@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import ShowCard from './ShowCard'
-import preload from '../../data/data-netflix.json'
+import preload from '../../data/data-portfolio-cards.json'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 class Home extends Component {

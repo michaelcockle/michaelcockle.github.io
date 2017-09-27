@@ -1,5 +1,7 @@
 let path = require('path');
 
+let webpack = require('webpack');
+
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 
 let ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -16,15 +18,20 @@ let SASSWebpackPluginConfig = new ExtractTextPlugin({
 });
 
 module.exports = {
+    entry:     [
+        'react-hot-loader/patch',
+        'webpack-dev-server/client?http://localhost:8080',
+        'webpack/hot/only-dev-server',
+        './app/index.js'
+    ],
     devServer: {
+        hot: true,
         inline: true,
         publicPath: '/',
         historyApiFallback: true
-
     },
-    entry:     [
-        './app/index.js'
-    ],
+    //devtool:   '#inline-source-map',
+    devtool:   'cheap-eval-source-map',
     output:    {
         library:  'Example', // window.Example
         path:     __dirname + '/dist',
@@ -95,10 +102,13 @@ module.exports = {
 
         ]
     },
-    devtool:   '#inline-source-map',
+
     //devtool:   'source-map',
-    plugins:
-               [HTMLWebpackPluginConfig, SASSWebpackPluginConfig]
+    plugins: [
+        HTMLWebpackPluginConfig,
+        SASSWebpackPluginConfig,
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NamedModulesPlugin()
+    ]
     //plugins:   [HTMLWebpackPluginConfig]
-}
-;
+};
