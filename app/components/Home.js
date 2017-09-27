@@ -42,8 +42,8 @@ class Home extends Component {
                                     ) >= 0
                             )
                         })
-                        .map(show => {
-                            return <ShowCard key={show.imdbID} {...show} />
+                        .map((show, index) => {
+                            return <ShowCard {...show} key={show.imdbID} id={index}/>
                         })}
                 </div>
             </div>

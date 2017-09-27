@@ -1,8 +1,12 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+
 import MapFilterReduce from './MapFilterReduce'
 import Examples from './Examples'
 import Home from './Home'
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+import Details from './Details'
+
+const FourOhFour = () => <h1>404</h1>
 
 const App = () => (
     <Router>
@@ -10,6 +14,9 @@ const App = () => (
             <ul>
                 <li>
                     <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/details">Details</Link>
                 </li>
                 <li>
                     <Link to="/about">About</Link>
@@ -28,6 +35,7 @@ const App = () => (
             <hr />
             <Switch>
                 <Route exact path="/" component={Home} />
+                <Route path="/details/:id" component={Details} />
                 <Route path="/about" component={About} />
                 <Route path="/topics" component={Topics} />
                 <Route path="/map" component={MapFilterReduce} />
@@ -38,7 +46,7 @@ const App = () => (
     </Router>
 )
 
-const FourOhFour = () => <h1>404</h1>
+
 
 const About = () => (
     <div>
