@@ -5,7 +5,7 @@ import MapFilterReduce from './MapFilterReduce'
 import Examples from './Examples'
 import Home from './Home'
 import Details from './Details'
-
+import preload from '../../data/data-portfolio-cards.json'
 const FourOhFour = () => <h1>404</h1>
 
 const App = () => (
@@ -35,7 +35,15 @@ const App = () => (
             <hr />
             <Switch>
                 <Route exact path="/" component={Home} />
-                <Route path="/details/:id" component={Details} />
+                <Route
+                    path="/details/:id"
+                    component={(props: { match: Match }) => {
+                        const selectedShow = preload.shows.find(
+                            show => props.match.params.id === show.imdbID,
+                        )
+                        return <Details show={selectedShow} />
+                    }}
+                />
                 <Route path="/about" component={About} />
                 <Route path="/topics" component={Topics} />
                 <Route path="/map" component={MapFilterReduce} />
@@ -45,8 +53,6 @@ const App = () => (
         </div>
     </Router>
 )
-
-
 
 const About = () => (
     <div>
