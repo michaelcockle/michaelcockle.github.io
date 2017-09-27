@@ -35,7 +35,8 @@ module.exports = {
     output:    {
         library:  'Example', // window.Example
         path:     __dirname + '/dist',
-        filename: "index_bundle.js"
+        filename: "index_bundle.js",
+        publicPath: "/"
     },
     resolve:   {
         extensions: ['*', '.js', '.jsx', '.css', '.scss', '.json']

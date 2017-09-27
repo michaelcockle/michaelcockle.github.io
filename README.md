@@ -66,3 +66,7 @@ webpack --config webpack-production.config.js -p ()
 
 Express server using server.js
 run > node server.js
+
+HMR
+
+npm install react-hot-loader@next
