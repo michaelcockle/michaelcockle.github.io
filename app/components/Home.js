@@ -53,4 +53,4 @@ class Home extends Component {
 
 export default Home
 
-//{<pre><code>{JSON.stringify(preload, null, 4)}</code></pre>}
+

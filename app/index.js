@@ -1,17 +1,16 @@
 import React from 'react'
 import {render} from 'react-dom'
-//import App from './App'
-import BasicExample from './components/BasicExample'
+import App from './components/App'
 require('./styles/app.scss');
 
 const renderApp = () => {
-    render(<BasicExample/>, document.getElementById('app'));
+    render(<App/>, document.getElementById('app'));
 }
 
 renderApp()
 
 if (module.hot) {
-    module.hot.accept('./components/BasicExample', () => {
+    module.hot.accept('./components/App', () => {
        renderApp();
     });
 }

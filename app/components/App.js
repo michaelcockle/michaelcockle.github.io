@@ -4,7 +4,7 @@ import Examples from './Examples'
 import Home from './Home'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
-const BasicExample = () => (
+const App = () => (
     <Router>
         <div>
             <ul>
@@ -75,4 +75,4 @@ const Topic = ({ match }) => (
     </div>
 )
 
-export default BasicExample
+export default App

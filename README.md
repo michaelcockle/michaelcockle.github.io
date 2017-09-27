@@ -68,5 +68,23 @@ Express server using server.js
 run > node server.js
 
 HMR
+---
 
 npm install react-hot-loader@next
+
+Impossible to have all 3 working together. 
+1: HMR
+2: Server Side Rendering
+3: Code Splitting
+
+Prettier
+--------
+
+/usr/local/bin/prettier -> /usr/local/lib/node_modules/prettier/bin/prettier.js
++ prettier@1.7.0
+
+Misc
+----
+
+//{<pre><code>{JSON.stringify(preload, null, 4)}</code></pre>}
+
