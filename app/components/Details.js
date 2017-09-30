@@ -1,5 +1,7 @@
 import React from 'react'
 
+console.log('Details.js');
+
 const Details = props => (
     <div className="details">
         <h1>Details</h1>

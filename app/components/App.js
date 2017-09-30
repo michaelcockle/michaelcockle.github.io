@@ -41,7 +41,8 @@ const App = () => (
             <hr />
 
             <Switch>
-                <Route exact path="/" component={Home} />
+                {/*<Route exact path="/" component={Home} />*/}
+                <Route exact path="/" component={(props) => <Home shows={preload.shows} {...props} />} />
                 <Route
                     path="/details/:id"
                     component={props => {
