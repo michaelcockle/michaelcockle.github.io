@@ -1,14 +1,12 @@
-let React    = require('react');
-let ReactDOM = require('react-dom');
+let React = require('react')
+let ReactDOM = require('react-dom')
+import Header from './Header'
 
-let About = React.createClass({
-    render: function () {
-        return (
-            <div>
-                <p>About</p>
-            </div>
-        )
-    }
-});
+const About = () => (
+    <div>
+        <Header />
+        <h2>About</h2>
+    </div>
+)
 
-module.exports = About;
+export default About

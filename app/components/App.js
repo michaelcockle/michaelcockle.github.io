@@ -9,6 +9,7 @@ import {
 import MapFilterReduce from './MapFilterReduce'
 import Examples from './Examples'
 import Home from './Home'
+import About from './about'
 import Details from './Details'
 import preload from '../../data/data-portfolio-cards.json'
 
@@ -62,11 +63,7 @@ const App = () => (
     </Router>
 )
 
-const About = () => (
-    <div>
-        <h2>About</h2>
-    </div>
-)
+
 
 const Topics = ({ match }) => (
     <div>

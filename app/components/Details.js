@@ -1,15 +1,14 @@
 import React from 'react'
-console.log('Details.js')
+import Header from './Header'
+
 
 const Details = props => {
     const { title, description, year, poster, trailer } = props.show
     return (
         <div className="details">
-            <h1>Details</h1>
 
-            <header>
-                <h1>Project</h1>
-            </header>
+            <Header />
+            <h2>Details</h2>
 
             <section>
                 <h1>{title}</h1>
