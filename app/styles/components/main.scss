@@ -29,8 +29,9 @@ kbd,
 samp {
     font-family: 'Open Sans', sans-serif;
     font-weight: $font-light !important;
-    font-size: 14px;
-    letter-spacing: .08em;
+    font-size: 6;
+    letter-spacing: .1em;
+    line-height: 1.65em;
 }
 
 header {
