@@ -1,11 +1,17 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
-
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch,
+    Match,
+} from 'react-router-dom'
 import MapFilterReduce from './MapFilterReduce'
 import Examples from './Examples'
 import Home from './Home'
 import Details from './Details'
 import preload from '../../data/data-portfolio-cards.json'
+
 const FourOhFour = () => <h1>404</h1>
 
 const App = () => (
@@ -33,11 +39,12 @@ const App = () => (
             </ul>
 
             <hr />
+
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route
                     path="/details/:id"
-                    component={(props: { match: Match }) => {
+                    component={props => {
                         const selectedShow = preload.shows.find(
                             show => props.match.params.id === show.imdbID,
                         )
@@ -74,7 +81,7 @@ const Topics = ({ match }) => (
                 <Link to={`${match.url}/props-v-state`}> Props v. State </Link>
             </li>
         </ul>
-        <Route path={`${match.url}/:topicId`} component={Topic} />
+        <Route path={`${match.url}/:topicId`} component={Topic} />{' '}
         <Route
             exact
             path={match.url}
