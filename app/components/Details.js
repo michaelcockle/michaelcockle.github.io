@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from './Header'
+import Spinner from './Spinner'
 
 class Details extends Component {
 
@@ -12,6 +13,7 @@ class Details extends Component {
         return (
             <div className="details">
                 <Header />
+                <Spinner />
                 <h2>Details</h2>
 
                 <section>

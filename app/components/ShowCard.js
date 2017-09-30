@@ -1,32 +1,53 @@
 import React from 'react'
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
-//import {shape, string} from 'prop-types'
-//const { string } = React.PropTypes
+// $FlowFixMe
+const Wrapper = styled(Link)`
+    width: 25%;
+    //width: calc(25% - 5px);
+    //margin-right: 5px;
+    //border: 2px solid #333;
+    border-radius: 2px;
+    margin-bottom: 25px;
+    padding: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+`
 
-const ShowCard = React.createClass({
+const Image = styled.img`
+    width: 100%;
+    display: flex;
+    margin-right: 10px;
+`
 
-    //propTypes: {
-    //    poster: string,
-    //    title: string,
-    //    year: string,
-    //    description: string
-    //},
-
+class ShowCard extends React.Component {
+    shouldComponentUpdate() {
+        return false
+    }
+    props: {
+        poster: string,
+        title: string,
+        year: string,
+        description: string,
+        imdbID: string,
+    }
     render() {
-        const { poster, title, year, description } = this.props
         return (
-            <div className="show-card">
-                <div className="show-card-img-wrap">
-                    <img src={`/dist/img/posters/${poster}`} alt={`${title}`} />
+            <Wrapper className="show-card" to={`/details/${this.props.imdbID}`}>
+                <Image
+                    alt={`${this.props.title} Show Poster`}
+                    src={`/dist/img/posters/${this.props.poster}`}
+                />
+                <div>
+                    <h3>{this.props.title}</h3>
+                    <h4>({this.props.year})</h4>
+                    <p>{this.props.description}</p>
                 </div>
-                <div className="show-copy-wrap">
-                    <h3>{title}</h3>
-                    <h3>{year}</h3>
-                    <p>{description}</p>
-                </div>
-            </div>
+            </Wrapper>
         )
-    },
-})
+    }
+}
 
 export default ShowCard
