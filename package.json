@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint js/**/*.js wepack.config.js",
     "test": "karma start",
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server -d --colors",
     "production": "webpack -p"
   },
   "repository": {
