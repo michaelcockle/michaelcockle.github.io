@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import ShowCard from './ShowCard'
 import Header from './Header'
-//import preload from '../../data/data-portfolio-cards.json'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 class Home extends Component {
@@ -38,7 +37,7 @@ class Home extends Component {
                     {this.props.shows
                         .filter(show => {
                             return (
-                                `${show.title} ${show.description}`
+                                `${show.title} ${show.description}${show.metadata}`
                                     .toUpperCase()
                                     .indexOf(
                                         this.state.searchTerm.toUpperCase(),
