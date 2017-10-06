@@ -7,14 +7,19 @@ import {
     Match,
 } from 'react-router-dom'
 
+import { CSSTransitionGroup } from 'react-transition-group'
 import Transition from 'react-transition-group/Transition'
-import CSSTransition from 'react-transition-group/CSSTransition';
+import CSSTransition from 'react-transition-group/CSSTransition'
+import TransitionGroup from 'react-transition-group/Transition'
+import { AnimatedSwitch } from 'react-router-transition'
+
+import preload from '../../data/data-portfolio-cards.json'
+
 import Examples from './Examples'
 import Home from './Home'
 import About from './about'
 import Details from './Details'
-import preload from '../../data/data-portfolio-cards.json'
-import Animation from './Animation';
+import Animation from './Animation'
 
 const FourOhFour = () => <h1>404</h1>
 
@@ -45,28 +50,39 @@ const App = () => (
             <hr />
 
             <Switch>
-                <Route exact path="/" component={(props) => <Home shows={preload.shows} {...props} />} />
-                <Route
-                    path="/details/:id"
-                    component={props => {
-                        const selectedShow = preload.shows.find(
-                            show => props.match.params.id === show.imdbID,
-                        )
-                        return <Details show={selectedShow} />
-                    }}
-                />
-                <Route path="/about" component={About} />
-                <Route path="/topics" component={Topics} />
-                <Route path="/examples" component={Examples} />
-                <Route path="/animation" component={Animation} />
-                <Route component={FourOhFour} />
+                <AnimatedSwitch
+                    atEnter={{ opacity: 0 }}
+                    atLeave={{ opacity: 0 }}
+                    atActive={{ opacity: 1 }}
+                    className="switch-wrapper"
+                >
+                    <Route
+                        exact
+                        path="/"
+                        component={props => (
+                            <Home shows={preload.shows} {...props} />
+                        )}
+                    />
+                    <Route
+                        path="/details/:id"
+                        component={props => {
+                            const selectedShow = preload.shows.find(
+                                show => props.match.params.id === show.imdbID,
+                            )
+                            return <Details show={selectedShow} />
+                        }}
+                    />
+
+                    <Route path="/about" component={About} />
+                    <Route path="/topics" component={Topics} />
+                    <Route path="/examples" component={Examples} />
+                    <Route path="/animation" component={Animation} />
+                    <Route component={FourOhFour} />
+                </AnimatedSwitch>
             </Switch>
         </div>
     </Router>
 )
-
-
-
 
 const Topics = ({ match }) => (
     <div>

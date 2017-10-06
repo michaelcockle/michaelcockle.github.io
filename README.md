@@ -4,6 +4,8 @@ Performance
 
 ?react_perf
 
+https://reactjs.org/docs/optimizing-performance.html#profiling-components-with-the-chrome-performance-tab
+
 Load your app with ?react_perf in the query string (for example, http://localhost:3000/?react_perf).
 
 Universal Rendering
@@ -16,10 +18,21 @@ server-side prerender your code so that when it gets down to the client, your br
 
 Time to interactive
 
+
+Animations
+==========
+
+https://reactcommunity.org/react-transition-group/
+https://dev.to/underdogio/adding-animations-to-your-react-app-with-react-transition-group
+
+For the Router
+--------------
+https://github.com/maisano/react-router-transition
+http://maisano.github.io/react-router-transition/animated-switch
+
+
 NODE   
-
-
-
+====
 
 https://davidwalsh.name/upgrade-nodejs
 test
