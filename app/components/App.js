@@ -6,7 +6,12 @@ import {
     Switch,
     Match,
 } from 'react-router-dom'
-import MapFilterReduce from './MapFilterReduce'
+
+import Transition from 'react-transition-group/Transition'
+
+
+
+//import MapFilterReduce from './MapFilterReduce'
 import Examples from './Examples'
 import Home from './Home'
 import About from './about'
@@ -83,7 +88,7 @@ const Topics = ({ match }) => (
         <Route
             exact
             path={match.url}
-            render={() => <h3>Please select a topic.</h3>}
+            render={() => <h3>Please select a topic</h3>}
         />
     </div>
 )

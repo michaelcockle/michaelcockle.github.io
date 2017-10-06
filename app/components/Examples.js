@@ -6,14 +6,12 @@ import {
     Link
 } from 'react-router-dom'
 
-let Examples = React.createClass({
-    render: function () {
+const Examples = () => {
         return (
             <div className='component-examples'>
                 <p>Work</p>
             </div>
         )
-    }
-});
+};
 
 export default Examples

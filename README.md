@@ -1,3 +1,26 @@
+
+Performance
+===========
+
+?react_perf
+
+Load your app with ?react_perf in the query string (for example, http://localhost:3000/?react_perf).
+
+Universal Rendering
+===================
+
+Improve percieved load time
+
+Universal rendering, formerly known as isomorphic rendering.
+server-side prerender your code so that when it gets down to the client, your browser can instantly show the markup while your app bootstraps in the background. 
+
+Time to interactive
+
+NODE   
+
+
+
+
 https://davidwalsh.name/upgrade-nodejs
 test
 Global Node Modules
