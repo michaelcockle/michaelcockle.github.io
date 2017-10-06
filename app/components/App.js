@@ -8,15 +8,13 @@ import {
 } from 'react-router-dom'
 
 import Transition from 'react-transition-group/Transition'
-
-
-
-//import MapFilterReduce from './MapFilterReduce'
+import CSSTransition from 'react-transition-group/CSSTransition';
 import Examples from './Examples'
 import Home from './Home'
 import About from './about'
 import Details from './Details'
 import preload from '../../data/data-portfolio-cards.json'
+import Animation from './Animation';
 
 const FourOhFour = () => <h1>404</h1>
 
@@ -37,17 +35,16 @@ const App = () => (
                     <Link to="/topics">Topics</Link>
                 </li>
                 <li>
-                    <Link to="/map">Map</Link>
+                    <Link to="/examples">Examples</Link>
                 </li>
                 <li>
-                    <Link to="/examples">Examples</Link>
+                    <Link to="/animation">Animation</Link>
                 </li>
             </ul>
 
             <hr />
 
             <Switch>
-                {/*<Route exact path="/" component={Home} />*/}
                 <Route exact path="/" component={(props) => <Home shows={preload.shows} {...props} />} />
                 <Route
                     path="/details/:id"
@@ -60,13 +57,14 @@ const App = () => (
                 />
                 <Route path="/about" component={About} />
                 <Route path="/topics" component={Topics} />
-                <Route path="/map" component={MapFilterReduce} />
                 <Route path="/examples" component={Examples} />
+                <Route path="/animation" component={Animation} />
                 <Route component={FourOhFour} />
             </Switch>
         </div>
     </Router>
 )
+
 
 
 
