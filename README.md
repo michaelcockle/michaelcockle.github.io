@@ -29,6 +29,7 @@ For the Router
 --------------
 https://github.com/maisano/react-router-transition
 http://maisano.github.io/react-router-transition/animated-switch
+https://hackernoon.com/animated-page-transitions-with-react-router-4-reacttransitiongroup-and-animated-1ca17bd97a1a
 
 
 NODE   

@@ -1,0 +1,48 @@
+
+
+body {
+    color: white;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: $font-bold;
+    font-weight: $font-regular;
+    font-weight: $font-light;
+}
+
+code,
+pre,
+kbd,
+samp {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: $font-light !important;
+    font-size: 6;
+    letter-spacing: .1em;
+    line-height: 1.65em;
+}
+
+
+h1,
+h2,
+h3 {
+    font-weight: $font-bold;
+    color: yellow;
+}
+
+
+a {
+    font-size: 14px;
+}
+
+li,
+p,
+span,
+a {
+    color: white;
+}
+
+
+h1,
+h2 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}

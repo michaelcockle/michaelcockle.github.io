@@ -2,48 +2,46 @@
     box-sizing: border-box;
 }
 
-$font-light: 300;
-$font-regular: 400;
-$font-bold: 600;
-
-body {
-}
-
 body {
     background-color: pink;
     background-color: darkslategray;
     background-color: maroon;
     background-color: #3a3a4a;
-
     padding: 20px;
-    color: white;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: $font-bold;
-    font-weight: $font-regular;
-    font-weight: $font-light;
 }
-code,
-pre,
-kbd,
-samp {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: $font-light !important;
-    font-size: 6;
-    letter-spacing: .1em;
-    line-height: 1.65em;
+
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 1rem 0.5rem;
+    border: solid 1px whitesmoke;
 }
+
+// Router -----
+
+.switch-wrapper {
+    position: relative;
+    border: solid 1px pink;
+}
+
+.switch-wrapper > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: solid 1px red;
+}
+
+
+
+
 
 header {
-    //border: solid 1px whitesmoke;
 }
 
-h1,
-h2,
-h3 {
-    font-weight: $font-bold;
-    color: yellow;
-}
 
 ul {
     li {
@@ -53,10 +51,6 @@ ul {
 
 img {
     max-width: 100%;
-}
-
-a {
-    font-size: 14px;
 }
 
 .nav {
@@ -79,12 +73,6 @@ a {
     padding: 20px;
 }
 
-li,
-p,
-span,
-a {
-    color: white;
-}
 
 a:hover {
     color: white;
@@ -97,36 +85,8 @@ ul {
     }
 }
 
-h1,
-h2 {
-    font-size: 18px;
-    margin: 0 0 10px 0;
-}
 
-.job {
-    a {
-        border: solid 1px white;
-        text-decoration: none;
-        padding: 5px 10px;
-    }
-    img {
-        max-width: 100px;
-    }
-}
 
-.show-card-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    .show-card-img-wrap {
-        padding: 1rem;
-    }
-    .show-card {
-        //flex: 0 0 25%;
-    }
-    .show-copy-wrap {
-        padding: 1rem;
-    }
-}
 
 .component {
     display: flex;
@@ -138,26 +98,7 @@ h2 {
     }
 }
 
-.img-project-detail {
-    @media all and (min-width: 768px) {
-    max-width: 25%;
 
-    }
-
-    img {
-        border: solid 1px black;
-    }
-}
-
-
-
-.container {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1000px;
-    padding: 1rem 0.5rem;
-}
 
 .board {
     display: flex;
@@ -169,21 +110,4 @@ h2 {
 .board__item {
     flex: 0 0 300px;
     padding: 0.5rem;
-}
-
-.card {
-    border: 1px solid #dadada;
-    display: block;
-    flex: 0 1 300px;
-    padding: 0.5rem;
-}
-
-// Router -----
-
-.switch-wrapper {
-    position: relative;
-}
-
-.switch-wrapper > div {
-    position: absolute;
 }
