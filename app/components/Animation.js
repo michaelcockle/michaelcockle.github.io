@@ -83,7 +83,7 @@ class ReactTransitionDemo extends React.Component {
         const { cards } = this.state
 
         return (
-            <main className="container">
+            <main className="card-container">
                 <h1>React Transition Demo</h1>
                 <button onClick={this.addCard}>Add a card</button>
                 <button onClick={this.removeLastCard}>Remove a card</button>
@@ -137,7 +137,7 @@ class ReactTransitionDemo extends React.Component {
 
 const Animation = () => {
     return (
-        <div className="component-examples">
+        <div className="route__item-wrapper">
             <p>Animation</p>
             <ReactTransitionDemo />
         </div>

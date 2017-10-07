@@ -8,7 +8,7 @@ const Header = (props) => {
     let utilSpace
 
     if (props.showSearch) {
-        utilSpace = <h1>lol</h1>
+        utilSpace = <p>lol</p>
     } else {
         utilSpace = (
             <h2>
@@ -20,7 +20,7 @@ const Header = (props) => {
     return (
         <header>
             <h1>
-                <Link to="/">Im the Header</Link>
+                <Link to="/">Header</Link>
             </h1>
             {utilSpace}
         </header>

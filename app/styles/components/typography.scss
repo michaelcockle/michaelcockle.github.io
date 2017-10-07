@@ -21,10 +21,21 @@ samp {
 }
 
 
-h1,
+h1, h2, h3 {
+    margin:0;
+    line-height: 1;
+}
+
+
+h1 {
+    font-weight: $font-bold;
+    color: yellow;
+    font-size: 24px;
+
+}
 h2,
 h3 {
-    font-weight: $font-bold;
+    font-weight: $font-light;
     color: yellow;
 }
 
@@ -41,8 +52,9 @@ a {
 }
 
 
-h1,
 h2 {
+    font-size: 20px;
+}
+h3 {
     font-size: 18px;
-    margin: 0 0 10px 0;
 }

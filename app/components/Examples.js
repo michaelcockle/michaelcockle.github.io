@@ -8,7 +8,7 @@ import {
 
 const Examples = () => {
         return (
-            <div className='component-examples'>
+            <div className="route__item-wrapper">
                 <p>Work</p>
             </div>
         )

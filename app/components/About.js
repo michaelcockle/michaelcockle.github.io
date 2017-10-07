@@ -3,7 +3,7 @@ let ReactDOM = require('react-dom')
 import Header from './Header'
 
 const About = () => (
-    <div>
+    <div className="route__item-wrapper">
         <Header />
         <h2>About</h2>
     </div>

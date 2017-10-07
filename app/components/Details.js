@@ -7,12 +7,12 @@ class Details extends Component {
     render() {
         const { title, description, year, poster, trailer } = this.props.show
         return (
-            <div className="show-card__details">
+            <div className="route__item-wrapper">
                 <Header />
                 <Spinner />
                 <h2>Details</h2>
 
-                <section>
+                <section className="show-card__details">
                     <h1>{title}</h1>
                     <h2>({year})</h2>
                     <p>{description}</p>

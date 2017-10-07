@@ -19,7 +19,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div>
+            <div className="route__item-wrapper">
                 <Header />
                 <p>{this.state.searchTerm}</p>
                 <input
