@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-//console.log('Props = ', props);
-
 const Header = (props) => {
 
     let utilSpace

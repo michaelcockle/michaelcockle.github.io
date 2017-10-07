@@ -15,8 +15,8 @@ import { AnimatedSwitch, spring, AnimatedRoute } from 'react-router-transition'
 
 import preload from '../../data/data-portfolio-cards.json'
 
+//import Examples from './Examples2'
 import Examples from './Examples'
-import Home from './Home'
 import About from './about'
 import Details from './Details'
 import Animation from './Animation'
@@ -67,16 +67,13 @@ const App = () => (
                     <Link to="/">Home</Link>
                 </li>
                 <li>
+                    <Link to="/Examples">Examples</Link>
+                </li>
+                <li>
                     <Link to="/details/ecp">Details</Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
-                </li>
-                <li>
                     <Link to="/topics">Topics</Link>
-                </li>
-                <li>
-                    <Link to="/examples">Examples</Link>
                 </li>
                 <li>
                     <Link to="/animation">Animation</Link>
@@ -84,6 +81,7 @@ const App = () => (
             </ul>
 
             <Switch>
+
                 <AnimatedSwitch
                     atEnter={bounceTransition.atEnter}
                     atLeave={bounceTransition.atLeave}
@@ -91,11 +89,13 @@ const App = () => (
                     mapStyles={mapStyles}
                     className="route-wrapper"
                 >
+                    <Route exact path="/" component={About} />
+
                     <Route
-                        exact
-                        path="/"
+
+                        path="/examples"
                         component={props => (
-                            <Home shows={preload.shows} {...props} />
+                            <Examples shows={preload.shows} {...props} />
                         )}
                     />
                     <Route
@@ -108,9 +108,7 @@ const App = () => (
                         }}
                     />
 
-                    <Route path="/about" component={About} />
                     <Route path="/topics" component={Topics} />
-                    <Route path="/examples" component={Examples} />
                     <Route path="/animation" component={Animation} />
                     <Route component={FourOhFour} />
                 </AnimatedSwitch>
