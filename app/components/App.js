@@ -12,6 +12,7 @@ import Transition from 'react-transition-group/Transition'
 import CSSTransition from 'react-transition-group/CSSTransition'
 import TransitionGroup from 'react-transition-group/Transition'
 import { AnimatedSwitch, spring, AnimatedRoute } from 'react-router-transition'
+import { withRouter } from 'react-router-dom'
 
 import preload from '../../data/data-portfolio-cards.json'
 
@@ -28,7 +29,7 @@ function mapStyles(styles) {
     return {
         opacity: styles.opacity,
         transform: `scale(${styles.scale})`,
-    };
+    }
 }
 
 // wrap the `spring` helper to use a bouncy config
@@ -36,7 +37,7 @@ function bounce(val) {
     return spring(val, {
         stiffness: 330,
         damping: 22,
-    });
+    })
 }
 
 // child matches will...
@@ -56,7 +57,7 @@ const bounceTransition = {
         opacity: bounce(1),
         scale: bounce(1),
     },
-};
+}
 
 const App = () => (
     <Router>
@@ -69,9 +70,6 @@ const App = () => (
                     <Link to="/work">Work</Link>
                 </li>
                 <li>
-                    <Link to="/details/ecp">Details</Link>
-                </li>
-                <li>
                     <Link to="/topics">Topics</Link>
                 </li>
                 <li>
@@ -80,7 +78,6 @@ const App = () => (
             </ul>
 
             <Switch>
-
                 <AnimatedSwitch
                     atEnter={bounceTransition.atEnter}
                     atLeave={bounceTransition.atLeave}
@@ -109,9 +106,7 @@ const App = () => (
                     <Route path="/topics" component={Topics} />
                     <Route path="/animation" component={Animation} />
                     <Route component={FourOhFour} />
-
                 </AnimatedSwitch>
-
             </Switch>
         </div>
     </Router>

@@ -5,12 +5,18 @@ import Header from './Header'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 class Work extends Component {
+
+    //previousLocation = this.props.location
+    //pathName = this.props.location.pathname
+
     state = {
         searchTerm: '',
     }
 
     componentDidMount() {
-        //console.log('unmount')
+        console.log('Component Did Mount')
+        //console.log(this.previousLocation)
+        //console.log(this.pathName)
     }
 
     handleSearchTermChange = event => {

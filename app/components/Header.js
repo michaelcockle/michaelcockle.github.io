@@ -6,11 +6,11 @@ const Header = (props) => {
     let utilSpace
 
     if (props.showSearch) {
-        utilSpace = <p>lol</p>
+        utilSpace = <p>***</p>
     } else {
         utilSpace = (
             <h2>
-                <Link to="/"> Back </Link>
+                <Link to="/">Back</Link>
             </h2>
         )
     }
@@ -26,6 +26,6 @@ const Header = (props) => {
 }
 
 Header.defaultProps = {
-    showSearch: true
+    showSearch: false
 }
 export default Header
