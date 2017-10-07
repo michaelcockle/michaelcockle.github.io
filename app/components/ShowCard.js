@@ -30,7 +30,7 @@ class ShowCard extends React.Component {
                     alt={`${this.props.title} Show Poster`}
                     src={`/dist/img/posters/${this.props.poster}`}
                 />
-                <div>
+                <div className="show-card__content-wrap">
                     <h3 className="show-card__title">{this.props.title}</h3>
                     <h4 className="show-card__year">({this.props.year})</h4>
                     <p className="show-card__description">{this.props.description}</p>
