@@ -4,13 +4,13 @@ import ShowCard from './ShowCard'
 import Header from './Header'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
-class Examples extends Component {
+class Work extends Component {
     state = {
         searchTerm: '',
     }
 
     componentDidMount() {
-        console.log('unmount')
+        //console.log('unmount')
     }
 
     handleSearchTermChange = event => {
@@ -29,9 +29,7 @@ class Examples extends Component {
                     placeholder="Search"
                 />
 
-                <p>
-                    <Link to="/topics">Link to Map</Link>
-                </p>
+
 
                 <div className="show-card-wrap">
                     {this.props.shows
@@ -59,4 +57,4 @@ class Examples extends Component {
     }
 }
 
-export default Examples
+export default Work

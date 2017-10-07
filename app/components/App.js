@@ -15,9 +15,8 @@ import { AnimatedSwitch, spring, AnimatedRoute } from 'react-router-transition'
 
 import preload from '../../data/data-portfolio-cards.json'
 
-//import Examples from './Examples2'
-import Examples from './Examples'
-import About from './about'
+import Work from './Work'
+import About from './About'
 import Details from './Details'
 import Animation from './Animation'
 
@@ -67,7 +66,7 @@ const App = () => (
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/Examples">Examples</Link>
+                    <Link to="/work">Work</Link>
                 </li>
                 <li>
                     <Link to="/details/ecp">Details</Link>
@@ -92,10 +91,9 @@ const App = () => (
                     <Route exact path="/" component={About} />
 
                     <Route
-
-                        path="/examples"
+                        path="/work"
                         component={props => (
-                            <Examples shows={preload.shows} {...props} />
+                            <Work shows={preload.shows} {...props} />
                         )}
                     />
                     <Route
@@ -111,7 +109,9 @@ const App = () => (
                     <Route path="/topics" component={Topics} />
                     <Route path="/animation" component={Animation} />
                     <Route component={FourOhFour} />
+
                 </AnimatedSwitch>
+
             </Switch>
         </div>
     </Router>
