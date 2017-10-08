@@ -52,7 +52,7 @@ class Work extends Component {
                             return (
                                 <ShowCard
                                     {...show}
-                                    key={show.imdbID}
+                                    key={show.projectID}
                                     id={index}
                                 />
                             )

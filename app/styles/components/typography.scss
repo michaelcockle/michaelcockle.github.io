@@ -1,5 +1,4 @@
 
-
 body {
     color: white;
     font-size: 16px;
@@ -20,12 +19,17 @@ samp {
     line-height: 1.65em;
 }
 
-
 h1, h2, h3 {
-    margin:0;
+    margin: 0;
     line-height: 1;
 }
 
+p {
+    flex-size: 14px;
+    @media all and (min-width: 768px) {
+        flex-size: 16px;
+    }
+}
 
 h1 {
     font-weight: $font-bold;
@@ -33,12 +37,12 @@ h1 {
     font-size: 24px;
 
 }
+
 h2,
 h3 {
     font-weight: $font-light;
     color: yellow;
 }
-
 
 a {
     font-size: 14px;
@@ -51,10 +55,10 @@ a {
     color: white;
 }
 
-
 h2 {
     font-size: 20px;
 }
+
 h3 {
     font-size: 18px;
 }

@@ -8,9 +8,10 @@ class Details extends Component {
         const { title, description, year, poster, trailer } = this.props.show
         return (
             <div className="route__item-wrapper">
+
                 <Header />
-                <Spinner />
-                <h2>Details</h2>
+
+                {/*<Spinner />*/}
 
                 <section className="show-card__details">
                     <h1>{title}</h1>

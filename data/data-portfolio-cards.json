@@ -4,127 +4,127 @@
         "year": "2012",
         "description": "Award winning ecommerce ranked 5th in top 500 retail sites",
         "poster": "bathstore.jpg",
-        "imdbID": "bathstore",
-        "metadata": "ecommerce"
+        "projectID": "bathstore",
+        "metadata": "CMS ecommerce"
     }, {
         "title": "Euro Car Parts",
         "year": "2017",
         "description": "Enterprise level B2B ecommerce featuring 500,000 products",
         "poster": "eurocarparts.jpg",
-        "imdbID": "ecp",
-        "metadata": "xxxx"
+        "projectID": "ecp",
+        "metadata": "CMS ecommerce"
     }, {
         "title": "Hi-Tec",
         "year": "2013",
         "description": "We helped put 4 million pairs of shoes on to feet through greater visibility",
         "poster": "hitec.jpg",
-        "imdbID": "hi-tec",
-        "metadata": "xxxx"
+        "projectID": "hi-tec",
+        "metadata": ""
     }, {
         "title": "Sun Branding",
         "year": "2003",
         "description": "A single cohesive brand proposition",
         "poster": "sun-branding-solutions.jpg",
-        "imdbID": "sunbranding",
-        "metadata": "xxxx"
+        "projectID": "sunbranding",
+        "metadata": "CMS"
     }, {
         "title": "M & S",
         "year": "2003",
         "description": "A single cohesive brand proposition",
         "poster": "marks-and-spencers.jpg",
-        "imdbID": "marks-and-spencers",
-        "metadata": "xxxx"
+        "projectID": "marks-and-spencers",
+        "metadata": "mobile"
     }, {
         "title": "Westland",
         "year": "2015",
         "description": "Serving stockists and consumers with a multi-faceted digital strategy",
         "poster": "westland.jpg",
-        "imdbID": "westland",
-        "metadata": "xxxx"
+        "projectID": "westland",
+        "metadata": "CMS"
     }, {
         "title": "Gardenhealth",
         "year": "2015",
         "description": "Serving stockists and consumers with a multi-faceted digital strategy",
         "poster": "westland.jpg",
-        "imdbID": "gardenhealth",
-        "metadata": "xxxx"
+        "projectID": "gardenhealth",
+        "metadata": "CMS"
     }, {
         "title": "Sidhil",
         "year": "2014",
         "description": "Ixxxxs advexxxina.",
         "poster": "bathstore.jpg",
-        "imdbID": "sidhil",
-        "metadata": "xxxx"
+        "projectID": "sidhil",
+        "metadata": "CMS"
     }, {
         "title": "Maxwell and williams",
         "year": "2015",
         "description": "xxxxxxome.",
         "poster": "bathstore.jpg",
-        "imdbID": "maxwellandwilliams",
-        "metadata": "xxxx"
+        "projectID": "maxwellandwilliams",
+        "metadata": "CMS ecommerce"
     }, {
         "title": "Andythornton",
         "year": "2015",
         "description": "xxxxxxome.",
         "poster": "bathstore.jpg",
-        "imdbID": "andythornton",
-        "metadata": "xxxx"
+        "projectID": "andythornton",
+        "metadata": "CMS ecommerce"
     }, {
         "title": "Cooltherm",
         "year": "2015",
         "description": "xxxxxxome.",
         "poster": "bathstore.jpg",
-        "imdbID": "cooltherm",
-        "metadata": "xxxx"
+        "projectID": "cooltherm",
+        "metadata": "CMS"
     }, {
         "title": "gogoflo",
         "year": "2015",
         "description": "xxxxxxome.",
         "poster": "bathstore.jpg",
-        "imdbID": "gogoflo",
-        "metadata": "xxxx"
+        "projectID": "gogoflo",
+        "metadata": "brochure"
     }, {
         "title": "Kitagawa",
         "year": "2015",
         "description": "xxxxxxome.",
         "poster": "bathstore.jpg",
-        "imdbID": "kitagawa",
-        "metadata": "xxxx"
+        "projectID": "kitagawa",
+        "metadata": "CMS ecommerce multi-lingual"
 
     }, {
         "title": "ukgoldbullion",
         "year": "2015",
         "description": "xxxxxxome.",
         "poster": "bathstore.jpg",
-        "imdbID": "ukgoldbullion",
-        "metadata": "xxxx"
+        "projectID": "ukgoldbullion",
+        "metadata": "CMS ecommerce"
     }, {
         "title": "CVT",
         "year": "2015",
         "description": "xxxxxxome.",
         "poster": "bathstore.jpg",
-        "imdbID": "cvt",
-        "metadata": "xxxx"
+        "projectID": "cvt",
+        "metadata": "CMS"
     }, {
         "title": "Rural Insurance Kiosk",
         "year": "2015",
         "description": "xxxxxxome.",
         "poster": "bathstore.jpg",
-        "imdbID": "rural-insurance-kiosk",
-        "metadata": "xxxx"
+        "projectID": "rural-insurance-kiosk",
+        "metadata": "brochure kiosk"
     }, {
         "title": "9xb",
         "year": "2015",
         "description": "xxxxxxome.",
         "poster": "bathstore.jpg",
-        "imdbID": "9xb",
-        "metadata": "xxxx"
+        "projectID": "9xb",
+        "metadata": "brochure"
     }, {
         "title": "Plasmor",
         "year": "2016",
         "description": "xxxx.",
         "poster": "bathstore.jpg",
-        "imdbID": "plasmor",
-        "metadata": "xxxx"
+        "projectID": "plasmor",
+        "metadata": "CMS"
     }]
 }
