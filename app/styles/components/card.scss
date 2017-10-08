@@ -6,25 +6,27 @@
     //grid-template-columns: auto;
 
     grid-template-columns: repeat(1, auto);
+    grid-gap: 1rem;
+
     @media all and (min-width: 480px) {
         grid-template-columns: repeat(2, auto);
-
     }
+
     @media all and (min-width: 768px) {
-        grid-template-columns: repeat(4, auto);
-
+        grid-template-columns: repeat(3, auto);
     }
 
-    grid-gap: 20px;
+
     .show-card-img-wrap {
         padding: 1rem;
     }
+
     .show-card {
         display: block;
         border: solid 1px whitesmoke;
         border-radius: 2px;
         overflow: hidden;
-        padding: 10px;
+        padding: 1rem;
         text-decoration: none;
         $whitesmoke: whitesmoke;
         background-color: rgba($whitesmoke, .05);
@@ -55,7 +57,7 @@
     }
 
     .show-card__title {
-        text-align: center;
+        //text-align: center;
         line-height: 1.3rem;
     }
     .show-card__year {

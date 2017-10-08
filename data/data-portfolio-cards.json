@@ -1,130 +1,210 @@
 {
-    "shows": [{
-        "title": "Bathstore",
-        "year": "2012",
-        "description": "Award winning ecommerce ranked 5th in top 500 retail sites",
-        "poster": "bathstore.jpg",
-        "projectID": "bathstore",
-        "metadata": "CMS ecommerce"
-    }, {
-        "title": "Euro Car Parts",
-        "year": "2017",
-        "description": "Enterprise level B2B ecommerce featuring 500,000 products",
-        "poster": "eurocarparts.jpg",
-        "projectID": "ecp",
-        "metadata": "CMS ecommerce"
-    }, {
-        "title": "Hi-Tec",
-        "year": "2013",
-        "description": "We helped put 4 million pairs of shoes on to feet through greater visibility",
-        "poster": "hitec.jpg",
-        "projectID": "hi-tec",
-        "metadata": ""
-    }, {
-        "title": "Sun Branding",
-        "year": "2003",
-        "description": "A single cohesive brand proposition",
-        "poster": "sun-branding-solutions.jpg",
-        "projectID": "sunbranding",
-        "metadata": "CMS"
-    }, {
-        "title": "M & S",
-        "year": "2003",
-        "description": "A single cohesive brand proposition",
-        "poster": "marks-and-spencers.jpg",
-        "projectID": "marks-and-spencers",
-        "metadata": "mobile"
-    }, {
-        "title": "Westland",
-        "year": "2015",
-        "description": "Serving stockists and consumers with a multi-faceted digital strategy",
-        "poster": "westland.jpg",
-        "projectID": "westland",
-        "metadata": "CMS"
-    }, {
-        "title": "Gardenhealth",
-        "year": "2015",
-        "description": "Serving stockists and consumers with a multi-faceted digital strategy",
-        "poster": "westland.jpg",
-        "projectID": "gardenhealth",
-        "metadata": "CMS"
-    }, {
-        "title": "Sidhil",
-        "year": "2014",
-        "description": "Ixxxxs advexxxina.",
-        "poster": "bathstore.jpg",
-        "projectID": "sidhil",
-        "metadata": "CMS"
-    }, {
-        "title": "Maxwell and williams",
-        "year": "2015",
-        "description": "xxxxxxome.",
-        "poster": "bathstore.jpg",
-        "projectID": "maxwellandwilliams",
-        "metadata": "CMS ecommerce"
-    }, {
-        "title": "Andythornton",
-        "year": "2015",
-        "description": "xxxxxxome.",
-        "poster": "bathstore.jpg",
-        "projectID": "andythornton",
-        "metadata": "CMS ecommerce"
-    }, {
-        "title": "Cooltherm",
-        "year": "2015",
-        "description": "xxxxxxome.",
-        "poster": "bathstore.jpg",
-        "projectID": "cooltherm",
-        "metadata": "CMS"
-    }, {
-        "title": "gogoflo",
-        "year": "2015",
-        "description": "xxxxxxome.",
-        "poster": "bathstore.jpg",
-        "projectID": "gogoflo",
-        "metadata": "brochure"
-    }, {
-        "title": "Kitagawa",
-        "year": "2015",
-        "description": "xxxxxxome.",
-        "poster": "bathstore.jpg",
-        "projectID": "kitagawa",
-        "metadata": "CMS ecommerce multi-lingual"
-
-    }, {
-        "title": "ukgoldbullion",
-        "year": "2015",
-        "description": "xxxxxxome.",
-        "poster": "bathstore.jpg",
-        "projectID": "ukgoldbullion",
-        "metadata": "CMS ecommerce"
-    }, {
-        "title": "CVT",
-        "year": "2015",
-        "description": "xxxxxxome.",
-        "poster": "bathstore.jpg",
-        "projectID": "cvt",
-        "metadata": "CMS"
-    }, {
-        "title": "Rural Insurance Kiosk",
-        "year": "2015",
-        "description": "xxxxxxome.",
-        "poster": "bathstore.jpg",
-        "projectID": "rural-insurance-kiosk",
-        "metadata": "brochure kiosk"
-    }, {
-        "title": "9xb",
-        "year": "2015",
-        "description": "xxxxxxome.",
-        "poster": "bathstore.jpg",
-        "projectID": "9xb",
-        "metadata": "brochure"
-    }, {
-        "title": "Plasmor",
-        "year": "2016",
-        "description": "xxxx.",
-        "poster": "bathstore.jpg",
-        "projectID": "plasmor",
-        "metadata": "CMS"
-    }]
+    "shows": [
+        {
+            "index": "1",
+            "title": "Bathstore",
+            "year": "2012",
+            "description":
+                "Award winning ecommerce ranked 5th in top 500 retail sites",
+            "poster": "bathstore.jpg",
+            "url": "https://www.bathstore.com/",
+            "projectID": "bathstore",
+            "metadata": "CMS ecommerce"
+        },
+        {
+            "index": "2",
+            "title": "Euro Car Parts",
+            "year": "2017",
+            "description":
+                "Enterprise level B2B ecommerce featuring 500,000 products",
+            "poster": "eurocarparts.jpg",
+            "url": "https://omnipart.eurocarparts.com/",
+            "projectID": "ecp",
+            "metadata": "CMS ecommerce"
+        },
+        {
+            "index": "3",
+            "title": "Hi-Tec",
+            "year": "2013",
+            "description":
+                "We helped put 4 million pairs of shoes on to feet through greater visibility",
+            "poster": "hitec.jpg",
+            "url": "http://www.hi-tec.com/",
+            "projectID": "hi-tec",
+            "metadata": ""
+        },
+        {
+            "index": "4",
+            "title": "Sun Branding",
+            "year": "2003",
+            "description": "A single cohesive brand proposition",
+            "poster": "sun-branding-solutions.jpg",
+            "url": "#",
+            "projectID": "sunbranding",
+            "metadata": "CMS"
+        },
+        {
+            "index": "5",
+            "title": "M & S",
+            "year": "2003",
+            "description": "A single cohesive brand proposition",
+            "poster": "marks-and-spencers.jpg",
+            "url": "https://www.bathstore.com/",
+            "projectID": "marks-and-spencers",
+            "metadata": "mobile"
+        },
+        {
+            "index": "6",
+            "title": "Westland",
+            "year": "2015",
+            "description":
+                "Serving stockists and consumers with a multi-faceted digital strategy",
+            "poster": "westland.jpg",
+            "url": "https://www.bathstore.com/",
+            "projectID": "westland",
+            "metadata": "CMS"
+        },
+        {
+            "index": "7",
+            "title": "Gardenhealth",
+            "year": "2015",
+            "description":
+                "Serving stockists and consumers with a multi-faceted digital strategy",
+            "poster": "westland.jpg",
+            "url": "https://www.gardenhealth.com/",
+            "projectID": "gardenhealth",
+            "metadata": "CMS"
+        },
+        {
+            "index": "8",
+            "title": "Sidhil",
+            "year": "2014",
+            "description":
+                "One of Europe’s foremost manufacturers of hospital and home health care furniture and accessories.",
+            "poster": "bathstore.jpg",
+            "url": "https://www.sidhil.com/",
+            "projectID": "sidhil",
+            "metadata": "CMS"
+        },
+        {
+            "index": "9",
+            "title": "Maxwell and williams",
+            "year": "2015",
+            "description":
+                "Maxwell & Williams is globally recognised as the go-to brand for affordable quality in designer homewares.",
+            "poster": "bathstore.jpg",
+            "url": "https://www.maxwellandwilliams.co.uk/",
+            "projectID": "maxwellandwilliams",
+            "metadata": "CMS ecommerce"
+        },
+        {
+            "index": "10",
+            "title": "Andy Thornton",
+            "year": "2015",
+            "description":
+                "Contract furniture, lighting & interior accessories for hospitality & retail.",
+            "poster": "bathstore.jpg",
+            "url": "https://www.andythornton.com/",
+            "projectID": "andythornton",
+            "metadata": "CMS ecommerce"
+        },
+        {
+            "index": "11",
+            "title": "Cooltherm",
+            "year": "2015",
+            "description":
+                "CoolTherm specialises in ultra-high efficiency Turbomiser chillers, value engineered chillers, and bespoke chillers for unusual or challenging applications.",
+            "poster": "bathstore.jpg",
+            "url": "https://www.cooltherm.co.uk/",
+            "projectID": "cooltherm",
+            "metadata": "CMS"
+        },
+        {
+            "index": "12",
+            "title": "Go Go Flo",
+            "year": "2015",
+            "description": "xxxxxxome.",
+            "poster": "bathstore.jpg",
+            "url": "https://www.bathstore.com/",
+            "projectID": "gogoflo",
+            "metadata": "brochure"
+        },
+        {
+            "index": "13",
+            "title": "Kitagawa",
+            "year": "2015",
+            "description":
+                "Kitagawa Iron Works Ltd (KIW) is a Japanese mixed engineering group founded some 75 years ago and listed on the Tokyo stock exchange. Its products cover machine tool accessories, building materials, a foundry and construction equipment.",
+            "poster": "https://www.kitagawa.global/en",
+            "url": "https://www.kitagawa.global/en/about",
+            "projectID": "kitagawa",
+            "metadata": "CMS ecommerce multi-lingual"
+        },
+        {
+            "index": "14",
+            "title": "Uk / Irish Gold Bullion",
+            "year": "2015",
+            "description":
+                "Irish Gold Bullion is a leading dealer of silver and gold bullion online.",
+            "poster": "bathstore.jpg",
+            "url": "https://irishgoldbullion.ie/",
+            "projectID": "ukgoldbullion",
+            "metadata": "CMS ecommerce"
+        },
+        {
+            "index": "15",
+            "title": "Camphill Village Trust",
+            "year": "2015",
+            "description":
+                "The Camphill Village Trust provides a home within a supportive community environment for people of all abilities. Whether in a household with others or more independently we accept and appreciate each other for who we are and encourage each other to give our best.",
+            "poster": "bathstore.jpg",
+            "url": "https://www.cvt.org.uk/",
+            "projectID": "cvt",
+            "metadata": "CMS"
+        },
+        {
+            "index": "16",
+            "title": "Rural Insurance Kiosk",
+            "year": "2015",
+            "description": "xxxxx xxxxx",
+            "poster": "bathstore.jpg",
+            "url": "https://www.bathstore.com/",
+            "projectID": "rural-insurance-kiosk",
+            "metadata": "brochure kiosk"
+        },
+        {
+            "index": "17",
+            "title": "9xb",
+            "year": "2015",
+            "description":
+                "We’re a privately owned, specialist digital agency who have been delivering cutting edge digital projects since 2004. We’ve grown in size, turnover and stature every year and work with a wonderful portfolio of clients.",
+            "poster": "https://9xb.com/",
+            "url": "https://www.bathstore.com/",
+            "projectID": "9xb",
+            "metadata": "brochure"
+        },
+        {
+            "index": "18",
+            "title": "Plasmor",
+            "year": "2016",
+            "description":
+                "Plasmor Limited is a privately owned building block and concrete block paving manufacturer.",
+            "poster": "bathstore.jpg",
+            "url": "https://www.plasmor.co.uk/",
+            "projectID": "plasmor",
+            "metadata": "CMS"
+        }
+    ,
+        {
+            "index": "19",
+            "title": "Childrens Hydration",
+            "year": "2016",
+            "description":
+            "dfsdf sdfs fdf sdf.",
+            "poster": "bathstore.jpg",
+            "url": "#",
+            "projectID": "hydration",
+            "metadata": "brochure SVG"
+        }
+    ]
 }

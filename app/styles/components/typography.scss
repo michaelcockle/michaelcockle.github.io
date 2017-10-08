@@ -1,4 +1,3 @@
-
 body {
     color: white;
     font-size: 16px;
@@ -8,44 +7,45 @@ body {
     font-weight: $font-light;
 }
 
-code,
-pre,
-kbd,
-samp {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: $font-light !important;
-    font-size: 6;
-    letter-spacing: .1em;
-    line-height: 1.65em;
+
+h1 {
+    font-weight: $font-bold;
+    color: yellow;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 20px;
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1.2rem;
 }
 
 h1, h2, h3 {
     margin: 0;
     line-height: 1;
-}
-
-p {
-    flex-size: 14px;
-    @media all and (min-width: 768px) {
-        flex-size: 16px;
-    }
-}
-
-h1 {
-    font-weight: $font-bold;
-    color: yellow;
-    font-size: 24px;
-
-}
-
-h2,
-h3 {
     font-weight: $font-light;
     color: yellow;
 }
 
+
+p {
+    flex-size: .8rem;
+    font-weight: $font-light;
+    @media all and (min-width: 768px) {
+        flex-size: 1rem;
+        line-height: 1.4rem;
+    }
+}
 a {
-    font-size: 14px;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
 li,
@@ -55,10 +55,13 @@ a {
     color: white;
 }
 
-h2 {
-    font-size: 20px;
-}
-
-h3 {
-    font-size: 18px;
+code,
+pre,
+kbd,
+samp {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: $font-light !important;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    line-height: 1.2rem;
 }

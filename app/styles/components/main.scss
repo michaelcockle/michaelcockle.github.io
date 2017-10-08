@@ -7,7 +7,7 @@ body {
     background-color: darkslategray;
     background-color: maroon;
     background-color: #3a3a4a;
-    padding: 20px;
+    padding: 2rem;
 }
 
 .header-wrap {
@@ -30,7 +30,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px;
+    max-width: 960px;
     padding: 1rem 0.5rem;
     border: dotted 1px whitesmoke;
 }
@@ -54,13 +54,8 @@ body {
 }
 
 .route__item-wrapper {
-    //position: absolute;
-    //top: 0;
-    //left: 0;
-    //right: 0;
-    //bottom: 0;
     border: dashed 1px greenyellow;
-    padding: 10px;
+    padding: 1rem;
     h2 {
         margin-bottom: 1rem;
     }
@@ -113,7 +108,8 @@ img {
 
 .nav {
     display: flex;
-    margin-bottom: 30px;
+    //border: solid 1px red;
+    //margin-bottom: 3rem;
     li {
         list-style: none;
         a {
@@ -128,7 +124,7 @@ img {
 }
 
 .main-wrap {
-    padding: 20px;
+    padding: 1rem;
 }
 
 a:hover {
@@ -169,4 +165,42 @@ ul {
     padding: 0.5rem;
     border: solid 1px antiquewhite;
     margin: 1rem;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "header header" "nav main" "footer footer";
+    grid-gap: 1rem;
+    border: dashed 1px #FFF;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    //grid-column-gap: 10px;
+
+    header, main, nav, footer {
+        padding: 1rem;
+        border-radius: 2px;
+    }
+
+    header {
+        grid-area: header;
+        background-color: #333;
+    }
+    main {
+        grid-area: main;
+        background-color: #999;
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: #900;
+
+    }
+    footer {
+        grid-area: footer;
+        background-color: #444;
+
+    }
+
 }

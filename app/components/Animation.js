@@ -84,7 +84,7 @@ class ReactTransitionDemo extends React.Component {
 
         return (
             <main className="card-container">
-                <h1>React Transition Demo</h1>
+
                 <button onClick={this.addCard}>Add a card</button>
                 <button onClick={this.removeLastCard}>Remove a card</button>
                 <TransitionGroup component={Board}>
