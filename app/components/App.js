@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import {
     BrowserRouter as Router,
     Route,
@@ -59,58 +59,84 @@ const bounceTransition = {
     },
 }
 
-const App = () => (
-    <Router>
-        <div>
-            <ul className="nav-main__wrap">
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/work">Work</Link>
-                </li>
-                <li>
-                    <Link to="/topics">Topics</Link>
-                </li>
-                <li>
-                    <Link to="/animation">Animation</Link>
-                </li>
-            </ul>
 
-            <Switch>
-                <AnimatedSwitch
-                    atEnter={bounceTransition.atEnter}
-                    atLeave={bounceTransition.atLeave}
-                    atActive={bounceTransition.atActive}
-                    mapStyles={mapStyles}
-                    className="route-wrapper"
-                >
-                    <Route exact path="/" component={About} />
+class App extends Component {
 
-                    <Route
-                        path="/work"
-                        component={props => (
-                            <Work shows={preload.shows} {...props} />
-                        )}
-                    />
-                    <Route
-                        path="/details/:id"
-                        component={props => {
-                            const selectedShow = preload.shows.find(
-                                show => props.match.params.id === show.projectID,
-                            )
-                            return <Details show={selectedShow} />
-                        }}
-                    />
+    constructor(props) {
 
-                    <Route path="/topics" component={Topics} />
-                    <Route path="/animation" component={Animation} />
-                    <Route component={FourOhFour} />
-                </AnimatedSwitch>
-            </Switch>
-        </div>
-    </Router>
-)
+        super(props)
+
+        this.state = {
+            newInfo: "Home two"
+        }
+    }
+
+    render() {
+
+        const what = this.state.newInfo;
+
+        return (
+            <Router>
+
+                <div>
+                    <ul className="nav-main__wrap">
+                        <li>
+                            <Link to="/">{what}</Link>
+                        </li>
+                        <li>
+                            <Link to="/work">Work</Link>
+                        </li>
+                        <li>
+                            <Link to="/topics">Topics</Link>
+                        </li>
+                        <li>
+                            <Link to="/animation">Animation</Link>
+                        </li>
+                    </ul>
+
+                    <Switch>
+                        <AnimatedSwitch
+                            atEnter={bounceTransition.atEnter}
+                            atLeave={bounceTransition.atLeave}
+                            atActive={bounceTransition.atActive}
+                            mapStyles={mapStyles}
+                            className="route-wrapper"
+                        >
+                            <Route
+                                exact
+                                path="/"
+                                component={props => <About name={what} />}
+                            />
+
+                            <Route
+                                path="/work"
+                                component={props => (
+                                    <Work shows={preload.shows} {...props} />
+                                )}
+                            />
+
+                            <Route
+                                path="/details/:id"
+                                component={props => {
+                                    const selectedShow = preload.shows.find(
+                                        show =>
+                                            props.match.params.id ===
+                                            show.projectID,
+                                    )
+                                    return <Details show={selectedShow} />
+                                }}
+                            />
+
+                            <Route path="/topics" component={Topics} />
+                            <Route path="/animation" component={Animation} />
+                            <Route component={FourOhFour} />
+                        </AnimatedSwitch>
+                    </Switch>
+                </div>
+            </Router>
+        )
+    }
+}
 
 const Topics = ({ match }) => (
     <div className="route__item-wrapper">
