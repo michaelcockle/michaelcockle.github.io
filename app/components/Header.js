@@ -1,31 +1,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Header = (props) => {
-
+const Header = props => {
     let utilSpace
 
     if (props.showSearch) {
-        utilSpace = <p>***</p>
-    } else {
         utilSpace = (
-            <h2>
-                <Link to="/">Back</Link>
-            </h2>
+            <input
+                onChange={props.handleSearchTermChange}
+                value={props.searchTerm}
+                type="text"
+                placeholder="Search"
+            />
         )
+    } else {
+        utilSpace = <Link to="/work">Back to work</Link>
     }
 
-    return (
-        <header>
-            <h1>
-                <Link to="/">Header</Link>
-            </h1>
-            {utilSpace}
-        </header>
-    )
+    return <header>{utilSpace}</header>
 }
 
 Header.defaultProps = {
-    showSearch: false
+    showSearch: false,
 }
+
 export default Header

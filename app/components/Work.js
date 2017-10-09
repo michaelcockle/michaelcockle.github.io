@@ -6,8 +6,6 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 class Work extends Component {
 
-    //previousLocation = this.props.location
-    //pathName = this.props.location.pathname
 
     state = {
         searchTerm: '',
@@ -26,16 +24,12 @@ class Work extends Component {
     render() {
         return (
             <div className="route__item-wrapper">
-                <Header />
-                <p>{this.state.searchTerm}</p>
-                <input
-                    onChange={this.handleSearchTermChange}
-                    value={this.state.searchTerm}
-                    type="text"
-                    placeholder="Search"
+                <Header
+                    searchTerm={this.state.searchTerm}
+                    showSearch
+                    handleSearchTermChange={this.handleSearchTermChange}
                 />
-
-
+                <p>{this.state.searchTerm}</p>
 
                 <div className="show-card-wrap">
                     {this.props.shows
