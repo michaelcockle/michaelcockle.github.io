@@ -6,12 +6,12 @@ import {
     Link
 } from 'react-router-dom'
 
-const Examples = () => {
+const Intro = () => {
         return (
             <div className="route__item-wrapper">
-                <p>Work</p>
+                <p>Intro</p>
             </div>
         )
 };
 
-export default Examples
+export default Intro

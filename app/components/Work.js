@@ -12,9 +12,7 @@ class Work extends Component {
     }
 
     componentDidMount() {
-        console.log('Component Did Mount')
-        //console.log(this.previousLocation)
-        //console.log(this.pathName)
+        console.log('Work: Component Did Mount')
     }
 
     handleSearchTermChange = event => {
@@ -24,11 +22,13 @@ class Work extends Component {
     render() {
         return (
             <div className="route__item-wrapper">
+
                 <Header
                     searchTerm={this.state.searchTerm}
-                    showSearch
+                    showSearch="yes"
                     handleSearchTermChange={this.handleSearchTermChange}
                 />
+
                 <p>{this.state.searchTerm}</p>
 
                 <div className="show-card-wrap">

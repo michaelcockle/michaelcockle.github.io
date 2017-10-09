@@ -16,9 +16,9 @@ class About extends Component {
     render() {
         return (
             <div className="route__item-wrapper">
-                <Header />
 
-                <h2>About</h2>
+                <Header showSearch="no" />
+
                 <h3>1: {this.state.infoCopy}</h3>
                 <h3>2: {this.props.name}</h3>
                 <p>

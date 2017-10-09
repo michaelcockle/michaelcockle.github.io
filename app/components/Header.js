@@ -4,17 +4,19 @@ import { Link } from 'react-router-dom'
 const Header = props => {
     let utilSpace
 
-    if (props.showSearch) {
+    if (props.showSearch === 'yes') {
         utilSpace = (
             <input
-                onChange={props.handleSearchTermChange}
-                value={props.searchTerm}
-                type="text"
                 placeholder="Search"
+                value={props.searchTerm}
+                onChange={props.handleSearchTermChange}
+                type="text"
             />
         )
-    } else {
+    } else if (props.showSearch === 'back') {
         utilSpace = <Link to="/work">Back to work</Link>
+    } else {
+        utilSpace = ''
     }
 
     return <header>{utilSpace}</header>
