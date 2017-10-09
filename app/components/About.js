@@ -19,11 +19,11 @@ class About extends Component {
 
                 <Header showSearch="no" />
 
-                <h3>1: {this.state.infoCopy}</h3>
-                <h3>2: {this.props.name}</h3>
+                {/*<h3>1: {this.state.infoCopy}</h3>*/}
+                {/*<h3>2: {this.props.name}</h3>*/}
+
                 <p>
-                    Adipisicing elit
-                    <Link to="/details/ecp">Euro Car Parts</Link> sed do eiusmod
+                    Hello world <Link to="/details/ecp">Euro Car Parts</Link> sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris
                     nisi ut aliquip ex ea commodo consequat. Duis aute irure

@@ -52,9 +52,9 @@ body {
         //height: 100%;
     }
 }
-
+$greenyellow: greenyellow;
 .route__item-wrapper {
-    border: dashed 1px greenyellow;
+    border: dashed 1px rgba($greenyellow, .5);
     padding: 1rem;
     h2 {
         margin-bottom: 1rem;
@@ -182,10 +182,8 @@ ul {
     grid-gap: 1rem;
 
     margin-bottom: 2rem;
-
-    border: dashed 1px #FFF;
-    border: dashed 1px #900;
     padding: 1rem;
+
 
     header, main, nav, aside, footer {
         padding: 1rem;
