@@ -32,7 +32,7 @@ body {
     margin-right: auto;
     max-width: 960px;
     padding: 1rem 0.5rem;
-    border: dotted 1px whitesmoke;
+    border: dashed 1px rgba(#FFF,.15);
 }
 
 // Router -----
@@ -169,16 +169,25 @@ ul {
 
 .about__container {
     display: grid;
-    grid-template-columns: 25% auto;
-    grid-template-rows: 100px auto 100px;
-    grid-template-areas: "header header" "nav main" "footer footer";
-    grid-gap: 1rem;
-    border: dashed 1px #FFF;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    //grid-column-gap: 10px;
 
-    header, main, nav, footer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 200px 2fr .5fr;
+    grid-template-columns: 150px 150px 1fr;
+
+    grid-template-rows: 100px auto 100px;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header" "nav aside main" "footer footer footer";
+
+    //grid-column-gap: 10px;
+    grid-gap: 1rem;
+
+    margin-bottom: 2rem;
+
+    border: dashed 1px #FFF;
+    border: dashed 1px #900;
+    padding: 1rem;
+
+    header, main, nav, aside, footer {
         padding: 1rem;
         border-radius: 2px;
     }
@@ -187,9 +196,44 @@ ul {
         grid-area: header;
         background-color: #333;
     }
+
     main {
         grid-area: main;
         background-color: #999;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+
+        grid-gap: 1rem;
+        .a {
+
+            grid-column: 2 / span 3;
+            grid-column: 3 / span 2;
+            grid-row: 1 / span 2;
+            //    grid-row: 3 / 4;
+            display: grid;
+            //grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+            grid-gap: 5px;
+            > div {
+                border: solid 1px #000;
+                background-color: #e6e6e6;
+                color: #000;
+                line-height: 1;
+
+            }
+        }
+
+        .h {
+            grid-column: 3 / span 2;
+        }
+
+        > div {
+            padding: .25rem;
+            border: solid 1px #5e5e5e;
+            text-align: center;
+            font-family: $font-light;
+            font-size: 12px;
+        }
     }
 
     nav {
@@ -197,6 +241,11 @@ ul {
         background-color: #900;
 
     }
+    aside {
+        grid-area: aside;
+        background-color: #777;
+    }
+
     footer {
         grid-area: footer;
         background-color: #444;
