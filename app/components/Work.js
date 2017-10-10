@@ -2,13 +2,11 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import ShowCard from './ShowCard'
 import Header from './Header'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, Match } from 'react-router-dom'
 
 class Work extends Component {
-
-
     state = {
-        searchTerm: '',
+        searchTerm: ''
     }
 
     componentDidMount() {
@@ -22,6 +20,7 @@ class Work extends Component {
     render() {
         return (
             <div className="route__item-wrapper">
+
 
                 <Header
                     searchTerm={this.state.searchTerm}

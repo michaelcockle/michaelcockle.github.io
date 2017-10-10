@@ -119,9 +119,7 @@ class App extends Component {
                                 path="/details/:id"
                                 component={props => {
                                     const selectedShow = preload.shows.find(
-                                        show =>
-                                            props.match.params.id ===
-                                            show.projectID,
+                                        show => props.match.params.id === show.projectID,
                                     )
                                     return <Details show={selectedShow} />
                                 }}
@@ -152,7 +150,7 @@ const Topics = ({ match }) => (
                 <Link to={`${match.url}/props-v-state`}> Props v. State </Link>
             </li>
         </ul>
-        <Route path={`${match.url}/:topicId`} component={Topic} />{' '}
+        <Route path={`${match.url}/:topicId`} component={Topic} />
         <Route
             exact
             path={match.url}
@@ -163,6 +161,8 @@ const Topics = ({ match }) => (
 
 const Topic = ({ match }) => (
     <div className="content-sub__wrap">
+
+        <h2>{match.url}</h2>
         <h3>{match.params.topicId}</h3>
     </div>
 )

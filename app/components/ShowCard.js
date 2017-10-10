@@ -35,7 +35,6 @@ class ShowCard extends React.Component {
                     <h3 className="show-card__title">{this.props.title}</h3>
                     <h4 className="show-card__year">({this.props.year})</h4>
                     <p className="show-card__description">{this.props.description}</p>
-
                 </div>
             </Wrapper>
         )

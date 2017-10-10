@@ -16,6 +16,7 @@ class Details extends Component {
             poster,
             trailer,
             url,
+            info
         } = this.props.show
         return (
             <div className="route__item-wrapper">
@@ -36,7 +37,8 @@ class Details extends Component {
                     <div className="show-card__details-info">
                         <h1>{title}</h1>
                         <h2>({year})</h2>
-                        <p>{description}*</p>
+                        <p>{description}</p>
+                        <p>{info}</p>
                         <p>
                             <a target="_blank" href={url}>
                                 {url}
