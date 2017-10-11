@@ -20,6 +20,7 @@ import Work from './Work'
 import About from './About'
 import Details from './Details'
 import Animation from './Animation'
+import Intro from './Intro'
 
 const FourOhFour = () => <h1>404</h1>
 
@@ -59,25 +60,20 @@ const bounceTransition = {
     },
 }
 
-
 class App extends Component {
-
     constructor(props) {
-
         super(props)
 
         this.state = {
-            newInfo: "Home"
+            newInfo: 'Home',
         }
     }
 
     render() {
-
-        const what = this.state.newInfo;
+        const what = this.state.newInfo
 
         return (
             <Router>
-
                 <div>
                     <ul className="nav-main__wrap">
                         <li>
@@ -91,6 +87,9 @@ class App extends Component {
                         </li>
                         <li>
                             <Link to="/animation">Animation</Link>
+                        </li>
+                        <li>
+                            <Link to="/intro">Intro</Link>
                         </li>
                     </ul>
 
@@ -107,26 +106,38 @@ class App extends Component {
                                 path="/"
                                 component={props => <About name={what} />}
                             />
-
                             <Route
                                 path="/work"
                                 component={props => (
                                     <Work shows={preload.shows} {...props} />
                                 )}
                             />
-
                             <Route
                                 path="/details/:id"
                                 component={props => {
                                     const selectedShow = preload.shows.find(
-                                        show => props.match.params.id === show.projectID,
+                                        show =>
+                                            props.match.params.id ===
+                                            show.projectID,
                                     )
                                     return <Details show={selectedShow} />
                                 }}
                             />
-
                             <Route path="/topics" component={Topics} />
                             <Route path="/animation" component={Animation} />
+                            {/*<Route*/}
+                                {/*path="/intro"*/}
+                                {/*render={({ match }) => (*/}
+                                    {/*<Intro id={match.params} />*/}
+                                {/*)}*/}
+                            {/*/>*/}
+                            <Route
+                                path="/intro"
+                                component={props => (
+                                    <Intro earl="hello world" />
+                                )}
+                            />
+                            )}
                             <Route component={FourOhFour} />
                         </AnimatedSwitch>
                     </Switch>
@@ -161,7 +172,6 @@ const Topics = ({ match }) => (
 
 const Topic = ({ match }) => (
     <div className="content-sub__wrap">
-
         <h2>{match.url}</h2>
         <h3>{match.params.topicId}</h3>
     </div>
