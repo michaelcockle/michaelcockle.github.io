@@ -14,7 +14,7 @@ const Header = props => {
             />
         )
     } else if (props.showSearch === 'back') {
-        utilSpace = <Link to="/work">Back to work</Link>
+        utilSpace = <p><Link to="/work">Back to work</Link></p>
     } else {
         utilSpace = ''
     }

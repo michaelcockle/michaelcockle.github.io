@@ -15,6 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 1rem;
     @media all and (min-width: 768px) {
         flex-direction: row;
     }
@@ -32,7 +33,7 @@ body {
     margin-right: auto;
     max-width: 960px;
     padding: 1rem 0.5rem;
-    border: dashed 1px rgba(#FFF,.15);
+    border: dashed 1px rgba(#FFF, .15);
 }
 
 // Router -----
@@ -52,6 +53,7 @@ body {
         //height: 100%;
     }
 }
+
 $greenyellow: greenyellow;
 .route__item-wrapper {
     border: dashed 1px rgba($greenyellow, .5);
@@ -77,7 +79,15 @@ $greenyellow: greenyellow;
     }
     margin-bottom: 1rem;
     a {
+        @include anim-all(200ms, ease-in-out);
+        flex: 1 1 auto;
         text-decoration: none;
+        padding: .5rem 1rem;
+        border: dashed 1px rgba(#FFF, .15);
+        border-radius: 3px;
+        &:hover {
+            border: dashed 1px rgba(#FFF, 1);
+        }
     }
 }
 
@@ -183,7 +193,6 @@ ul {
 
     margin-bottom: 2rem;
     padding: 1rem;
-
 
     header, main, nav, aside, footer {
         padding: 1rem;

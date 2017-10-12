@@ -16,11 +16,15 @@ import { withRouter } from 'react-router-dom'
 
 import preload from '../../data/data-portfolio-cards.json'
 
+import transitions from './functions/transitions'
+transitions()
+
 import Work from './Work'
 import About from './About'
 import Details from './Details'
 import Animation from './Animation'
 import Intro from './Intro'
+import Generic from './Generic'
 
 const FourOhFour = () => <h1>404</h1>
 
@@ -91,6 +95,9 @@ class App extends Component {
                         <li>
                             <Link to="/intro">Intro</Link>
                         </li>
+                        <li>
+                            <Link to="/generic">Generic</Link>
+                        </li>
                     </ul>
 
                     <Switch>
@@ -125,19 +132,14 @@ class App extends Component {
                             />
                             <Route path="/topics" component={Topics} />
                             <Route path="/animation" component={Animation} />
-                            {/*<Route*/}
-                                {/*path="/intro"*/}
-                                {/*render={({ match }) => (*/}
-                                    {/*<Intro id={match.params} />*/}
-                                {/*)}*/}
-                            {/*/>*/}
+
                             <Route
                                 path="/intro"
                                 component={props => (
                                     <Intro earl="hello world" />
                                 )}
                             />
-                            )}
+                            <Route path="/generic" component={Generic} />
                             <Route component={FourOhFour} />
                         </AnimatedSwitch>
                     </Switch>
