@@ -74,11 +74,12 @@ $greenyellow: greenyellow;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 600px) {
         flex-direction: row;
     }
-    margin-bottom: 1rem;
     a {
+        display: block;
+        margin-bottom: 1rem;
         @include anim-all(200ms, ease-in-out);
         flex: 1 1 auto;
         text-decoration: none;

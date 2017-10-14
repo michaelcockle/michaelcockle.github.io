@@ -5,6 +5,7 @@
       "year": "2012",
       "description": "Award winning ecommerce ranked 5th in top 500 retail sites",
       "poster": "bathstore.jpg",
+      myRole: "Front End Build"
       "url": "https://www.bathstore.com/",
       "projectID": "bathstore",
       "metadata": "CMS ecommerce",
@@ -15,6 +16,7 @@
       "year": "2017",
       "description": "Enterprise level B2B ecommerce featuring 500,000 products",
       "poster": "eurocarparts.jpg",
+      myRole: "Front End Build"
       "url": "https://omnipart.eurocarparts.com/",
       "projectID": "ecp",
       "metadata": "CMS ecommerce"
@@ -24,6 +26,7 @@
       "year": "2013",
       "description": "We helped put 4 million pairs of shoes on to feet through greater visibility",
       "poster": "hitec.jpg",
+      myRole: "Front End Build"
       "url": "http://www.hi-tec.com/",
       "projectID": "hi-tec",
       "metadata": ""
@@ -33,6 +36,7 @@
       "year": "2003",
       "description": "A single cohesive brand proposition",
       "poster": "sun-branding-solutions.jpg",
+      myRole: "Front End Build"
       "url": "#",
       "projectID": "sunbranding",
       "metadata": "CMS"
@@ -42,6 +46,7 @@
       "year": "2016",
       "description": "xxxx xxxx.",
       "poster": "bathstore.jpg",
+      myRole: "Front End Build"
       "url": "http://englishcheesecake.com/",
       "projectID": "cheesecake",
       "metadata": "CMS"
@@ -51,6 +56,7 @@
       "year": "2014",
       "description": "One of Europe’s foremost manufacturers of hospital and home health care furniture and accessories.",
       "poster": "bathstore.jpg",
+      myRole: "Front End Build"
       "url": "https://www.sidhil.com/",
       "projectID": "sidhil",
       "metadata": "CMS"
@@ -60,6 +66,7 @@
       "year": "2015",
       "description": "Maxwell & Williams is globally recognised as the go-to brand for affordable quality in designer homewares.",
       "poster": "maxwell-and-williams.jpg",
+      myRole: "Front End Build"
       "url": "https://www.maxwellandwilliams.co.uk/",
       "projectID": "maxwellandwilliams",
       "metadata": "CMS ecommerce"
@@ -69,6 +76,7 @@
       "year": "2015",
       "description": "Contract furniture, lighting & interior accessories for hospitality & retail.",
       "poster": "andythornton.jpg",
+      myRole: "Front End Build"
       "url": "https://www.andythornton.com/",
       "projectID": "andythornton",
       "metadata": "CMS ecommerce"
@@ -78,6 +86,7 @@
       "year": "2003",
       "description": "A single cohesive brand proposition",
       "poster": "marks-and-spencers.jpg",
+      myRole: "Front End Build"
       "url": "https://www.bathstore.com/",
       "projectID": "marks-and-spencers",
       "metadata": "mobile"
@@ -88,6 +97,7 @@
       "year": "2015",
       "description": "Serving stockists and consumers with a multi-faceted digital strategy",
       "poster": "westland.jpg",
+      myRole: "Front End Build"
       "url": "https://www.gardenhealth.com/",
       "projectID": "gardenhealth",
       "metadata": "CMS"
@@ -97,6 +107,7 @@
       "year": "2015",
       "description": "CoolTherm specialises in ultra-high efficiency Turbomiser chillers, value engineered chillers,",
       "poster": "bathstore.jpg",
+      myRole: "Front End Build"
       "url": "https://www.cooltherm.co.uk/",
       "projectID": "cooltherm",
       "metadata": "CMS"
@@ -106,6 +117,7 @@
       "year": "2015",
       "description": "xxxxxxome.",
       "poster": "bathstore.jpg",
+      myRole: "Front End Build"
       "url": "https://www.bathstore.com/",
       "projectID": "gogoflo",
       "metadata": "brochure"
@@ -115,6 +127,7 @@
       "year": "2015",
       "description": "Kitagawa is a Japanese mixed engineering group founded some 75 years ago and listed on the Tokyo stock exchange.",
       "poster": "https://www.kitagawa.global/en",
+      myRole: "Front End Build"
       "url": "https://www.kitagawa.global/en/about",
       "projectID": "kitagawa",
       "metadata": "CMS ecommerce multi-lingual"
@@ -124,6 +137,7 @@
       "year": "2015",
       "description": "Irish Gold Bullion is a leading dealer of silver and gold bullion online.",
       "poster": "bathstore.jpg",
+      myRole: "Front End Build"
       "url": "https://irishgoldbullion.ie/",
       "projectID": "ukgoldbullion",
       "metadata": "CMS ecommerce"
@@ -133,6 +147,7 @@
       "year": "2015",
       "description": "Camphill Village Trust provides a home within a supportive community environment for people of all abilities.",
       "poster": "bathstore.jpg",
+      myRole: "Front End Build"
       "url": "https://www.cvt.org.uk/",
       "projectID": "cvt",
       "metadata": "CMS"
@@ -142,6 +157,7 @@
       "year": "2015",
       "description": "xxxxx xxxxx",
       "poster": "bathstore.jpg",
+      myRole: "Front End Build"
       "url": "https://www.bathstore.com/",
       "projectID": "rural-insurance-kiosk",
       "metadata": "brochure kiosk"
@@ -151,6 +167,7 @@
       "year": "2015",
       "description": "Specialist digital agency delivering cutting edge digital projects since 2004.",
       "poster": "9xb.jpg",
+      myRole: "Front End Build"
       "url": "https://www.bathstore.com/",
       "projectID": "9xb",
       "metadata": "brochure"
@@ -160,6 +177,7 @@
       "year": "2016",
       "description": "Plasmor Limited is a privately owned building block and concrete block paving manufacturer.",
       "poster": "bathstore.jpg",
+      myRole: "Front End Build"
       "url": "https://www.plasmor.co.uk/",
       "projectID": "plasmor",
       "metadata": "CMS"
@@ -169,6 +187,7 @@
       "year": "2016",
       "description": "dfsdf sdfs fdf sdf.",
       "poster": "bathstore.jpg",
+      myRole: "Front End Build"
       "url": "#",
       "projectID": "hydration",
       "metadata": "brochure SVG"
