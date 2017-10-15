@@ -2,13 +2,25 @@ import React, { Component } from 'react'
 import Header from './Header'
 import Spinner from './Spinner'
 
+
+function parse(url) {
+    let urlNoProtocol = url
+    .replace(/^https?:\/\//i, "")
+    .replace(/\/$/, "");
+    return urlNoProtocol;
+}
+
+
+
 class Details extends Component {
 
     componentDidMount() {
         console.log('Details: Component Did Mount');
+
     }
 
     render() {
+
         const {
             title,
             description,
@@ -18,6 +30,11 @@ class Details extends Component {
             url,
             info
         } = this.props.show
+
+
+        let newUrl = parse(url);
+        console.log(newUrl);
+
         return (
             <div className="route__item-wrapper">
 
@@ -41,7 +58,7 @@ class Details extends Component {
                         <p>{info}</p>
                         <p>
                             <a target="_blank" href={url}>
-                                {url}
+                                {newUrl}
                             </a>
                         </p>
                     </div>

@@ -69,7 +69,7 @@ class App extends Component {
         super(props)
 
         this.state = {
-            newInfo: 'Home',
+            newInfo: 'Home'
         }
     }
 
@@ -116,7 +116,7 @@ class App extends Component {
                             <Route
                                 path="/work"
                                 component={props => (
-                                    <Work shows={preload.shows} {...props} />
+                                    <Work abba={props.match}  shows={preload.shows} {...props} />
                                 )}
                             />
                             <Route

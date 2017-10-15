@@ -45,6 +45,7 @@ p {
     }
 }
 a {
+    @include anim-all(200ms, ease-in-out);
     font-size: 1rem;
     text-decoration: none;
 }

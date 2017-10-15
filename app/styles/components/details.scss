@@ -19,7 +19,11 @@
 }
 
 .show-card__details-info {
-
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 
