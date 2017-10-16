@@ -2,64 +2,25 @@
   "shows": [
     {
       "title": "Bathstore",
-      "year": "2012",
+      "year": "2013",
       "description": "Award winning ecommerce ranked 5th in top 500 retail sites",
       "poster": "bathstore.jpg",
       "myRole": "Front End Build",
       "url": "https://www.bathstore.com/",
       "projectID": "bathstore",
       "metadata": "CMS ecommerce",
-      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "info": "Front End build and maintenance"
     },
     {
       "title": "Euro Car Parts",
-      "year": "2017",
+      "year": "2016",
       "description": "Enterprise level B2B ecommerce featuring 500,000 products",
       "poster": "eurocarparts.jpg",
       "myRole": "Front End Build",
       "url": "https://omnipart.eurocarparts.com/",
       "projectID": "ecp",
-      "metadata": "CMS ecommerce"
-    },
-    {
-      "title": "Hi-Tec",
-      "year": "2013",
-      "description": "We helped put 4 million pairs of shoes on to feet through greater visibility",
-      "poster": "hitec.jpg",
-      "myRole": "Front End Build",
-      "url": "http://www.hi-tec.com/",
-      "projectID": "hi-tec",
-      "metadata": ""
-    },
-    {
-      "title": "Sun Branding",
-      "year": "2003",
-      "description": "A single cohesive brand proposition",
-      "poster": "sun-branding-solutions.jpg",
-      "myRole": "Front End Build",
-      "url": "#",
-      "projectID": "sunbranding",
-      "metadata": "CMS"
-    },
-    {
-      "title": "English Cheesecake",
-      "year": "2016",
-      "description": "xxxx xxxx.",
-      "poster": "bathstore.jpg",
-      "myRole": "Front End Build",
-      "url": "http://englishcheesecake.com/",
-      "projectID": "cheesecake",
-      "metadata": "CMS"
-    },
-    {
-      "title": "Sidhil",
-      "year": "2014",
-      "description": "One of Europe’s foremost manufacturers of hospital and home health care furniture and accessories.",
-      "poster": "bathstore.jpg",
-      "myRole": "Front End Build",
-      "url": "https://www.sidhil.com/",
-      "projectID": "sidhil",
-      "metadata": "CMS"
+      "metadata": "CMS ecommerce",
+      "info": "Part of a team that built and maintained the Front End"
     },
     {
       "title": "Maxwell and williams",
@@ -69,17 +30,95 @@
       "myRole": "Front End Build",
       "url": "https://www.maxwellandwilliams.co.uk/",
       "projectID": "maxwellandwilliams",
-      "metadata": "CMS ecommerce"
+      "metadata": "CMS ecommerce",
+      "info": "Front End build and maintenance"
     },
     {
       "title": "Andy Thornton",
-      "year": "2015",
+      "year": "2016",
       "description": "Contract furniture, lighting & interior accessories for hospitality & retail.",
       "poster": "andythornton.jpg",
       "myRole": "Front End Build",
       "url": "https://www.andythornton.com/",
       "projectID": "andythornton",
-      "metadata": "CMS ecommerce"
+      "metadata": "CMS ecommerce",
+      "info": "Front End build and maintenance"
+    },
+    {
+      "title": "Efstas",
+      "year": "2015",
+      "description": "Functional Safety Training and Services Ltd",
+      "poster": "hitec.jpg",
+      "myRole": "Front End Build",
+      "url": "http://www.efstas.com/",
+      "projectID": "efstas",
+      "metadata": "Educational",
+      "info": "Front End build and maintenance"
+    },
+    {
+      "title": "Hi-Tec",
+      "year": "2013",
+      "description": "We helped put 4 million pairs of shoes on to feet through greater visibility",
+      "poster": "hitec.jpg",
+      "myRole": "Front End Build",
+      "url": "http://www.hi-tec.com/",
+      "projectID": "hi-tec",
+      "metadata": "",
+      "info": "Front End: bespoke projects"
+    },
+    {
+      "title": "Weavabel",
+      "year": "2014",
+      "description": "Xxxxx xxxx",
+      "poster": "hitec.jpg",
+      "myRole": "Front End Build",
+      "url": "#",
+      "projectID": "weavabel",
+      "info": "Front End build and maintenance"
+    },
+    {
+      "title": "Sun Branding",
+      "year": "2014",
+      "description": "A single cohesive brand proposition",
+      "poster": "sun-branding-solutions.jpg",
+      "myRole": "Front End Build",
+      "url": "#",
+      "projectID": "sunbranding",
+      "metadata": "CMS",
+      "info": "Front End build and maintenance"
+    },
+    {
+      "title": "English Cheesecake",
+      "year": "2016",
+      "description": "xxxx xxxx.",
+      "poster": "bathstore.jpg",
+      "myRole": "Front End Build",
+      "url": "http://englishcheesecake.com/",
+      "projectID": "cheesecake",
+      "metadata": "CMS",
+      "info": "Front End build and maintenance"
+    },
+    {
+      "title": "Range Right",
+      "year": "2017",
+      "description": "Wholesale delivery of firearms and shooting equipment to the trade.",
+      "poster": "bathstore.jpg",
+      "myRole": "Front End Build",
+      "url": "http://www.range-right.co.uk/",
+      "projectID": "rangeright",
+      "metadata": "CMS",
+      "info": "Front End build and maintenance"
+    },
+    {
+      "title": "Sidhil",
+      "year": "2014",
+      "description": "One of Europe’s foremost manufacturers of hospital and home health care furniture and accessories.",
+      "poster": "bathstore.jpg",
+      "myRole": "Front End Build",
+      "url": "https://www.sidhil.com/",
+      "projectID": "sidhil",
+      "metadata": "CMS",
+      "info": "Front End build and maintenance"
     },
     {
       "title": "M & S",
@@ -87,11 +126,10 @@
       "description": "A single cohesive brand proposition",
       "poster": "marks-and-spencers.jpg",
       "myRole": "Front End Build",
-      "url": "https://www.bathstore.com/",
+      "url": "#",
       "projectID": "marks-and-spencers",
       "metadata": "mobile"
     },
-
     {
       "title": "Gardenhealth",
       "year": "2015",
@@ -100,7 +138,8 @@
       "myRole": "Front End Build",
       "url": "https://www.gardenhealth.com/",
       "projectID": "gardenhealth",
-      "metadata": "CMS"
+      "metadata": "CMS",
+      "info": "Front End build and maintenance"
     },
     {
       "title": "Cooltherm",
@@ -110,7 +149,8 @@
       "myRole": "Front End Build",
       "url": "https://www.cooltherm.co.uk/",
       "projectID": "cooltherm",
-      "metadata": "CMS"
+      "metadata": "CMS",
+      "info": "Front End build and maintenance"
     },
     {
       "title": "Go Go Flo",
@@ -118,9 +158,10 @@
       "description": "xxxxxxome.",
       "poster": "bathstore.jpg",
       "myRole": "Front End Build",
-      "url": "https://www.bathstore.com/",
+      "url": "#",
       "projectID": "gogoflo",
-      "metadata": "brochure"
+      "metadata": "brochure",
+      "info": "Front End build and maintenance"
     },
     {
       "title": "Kitagawa",
@@ -130,17 +171,19 @@
       "myRole": "Front End Build",
       "url": "https://www.kitagawa.global/en/about",
       "projectID": "kitagawa",
-      "metadata": "CMS ecommerce multi-lingual"
+      "metadata": "CMS ecommerce multi-lingual",
+      "info": "Front End build and maintenance"
     },
     {
       "title": "Uk / Irish Gold Bullion",
-      "year": "2015",
+      "year": "2016",
       "description": "Irish Gold Bullion is a leading dealer of silver and gold bullion online.",
       "poster": "bathstore.jpg",
       "myRole": "Front End Build",
       "url": "https://irishgoldbullion.ie/",
       "projectID": "ukgoldbullion",
-      "metadata": "CMS ecommerce"
+      "metadata": "CMS ecommerce",
+      "info": "Front End build and maintenance"
     },
     {
       "title": "Camphill Village Trust",
@@ -150,7 +193,8 @@
       "myRole": "Front End Build",
       "url": "https://www.cvt.org.uk/",
       "projectID": "cvt",
-      "metadata": "CMS"
+      "metadata": "CMS",
+      "info": "Front End build and maintenance"
     },
     {
       "title": "Rural Insurance Kiosk",
@@ -158,9 +202,10 @@
       "description": "xxxxx xxxxx",
       "poster": "bathstore.jpg",
       "myRole": "Front End Build",
-      "url": "https://www.bathstore.com",
+      "url": "#",
       "projectID": "rural-insurance-kiosk",
-      "metadata": "brochure kiosk"
+      "metadata": "brochure kiosk",
+      "info": "Front End build"
     },
     {
       "title": "9xb",
@@ -168,9 +213,10 @@
       "description": "Specialist digital agency delivering cutting edge digital projects since 2004.",
       "poster": "9xb.jpg",
       "myRole": "Front End Build",
-      "url": "https://www.bathstore.com/",
+      "url": "https://9xb.com",
       "projectID": "9xb",
-      "metadata": "brochure"
+      "metadata": "brochure",
+      "info": "Front End build / multiple iterations and maintenance"
     },
     {
       "title": "Plasmor",
@@ -180,17 +226,19 @@
       "myRole": "Front End Build",
       "url": "https://www.plasmor.co.uk/",
       "projectID": "plasmor",
-      "metadata": "CMS"
+      "metadata": "CMS",
+      "info": "Front End build and maintenance"
     },
     {
       "title": "Childrens Hydration",
       "year": "2016",
-      "description": "dfsdf sdfs fdf sdf.",
+      "description": "Animation SVG",
       "poster": "bathstore.jpg",
       "myRole": "Front End Build",
       "url": "#",
       "projectID": "hydration",
-      "metadata": "brochure SVG"
+      "metadata": "brochure SVG",
+      "info": "Front End build and maintenance"
     }
   ]
 }

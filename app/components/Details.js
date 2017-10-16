@@ -2,25 +2,17 @@ import React, { Component } from 'react'
 import Header from './Header'
 import Spinner from './Spinner'
 
-
 function parse(url) {
-    let urlNoProtocol = url
-    .replace(/^https?:\/\//i, "")
-    .replace(/\/$/, "");
-    return urlNoProtocol;
+    let urlNoProtocol = url.replace(/^https?:\/\//i, '').replace(/\/$/, '')
+    return urlNoProtocol
 }
 
-
-
 class Details extends Component {
-
     componentDidMount() {
-        console.log('Details: Component Did Mount');
-
+        console.log('Details: Component Did Mount')
     }
 
     render() {
-
         const {
             title,
             description,
@@ -28,22 +20,19 @@ class Details extends Component {
             poster,
             trailer,
             url,
-            info
+            info,
         } = this.props.show
 
-
-        let newUrl = parse(url);
-        console.log(newUrl);
+        let newUrl = parse(url)
+        console.log(newUrl)
 
         return (
             <div className="route__item-wrapper">
-
                 <Header showSearch="back" />
 
                 {/*<Spinner />*/}
 
                 <section className="show-card__details">
-
                     <div className="show-card__details-img">
                         <img
                             src={`/dist/img/posters/${poster}`}
@@ -52,10 +41,16 @@ class Details extends Component {
                     </div>
 
                     <div className="show-card__details-info">
+
                         <h1>{title}</h1>
                         <h2>({year})</h2>
+
+                        <h3>Description</h3>
                         <p>{description}</p>
+
+                        <h4>Info</h4>
                         <p>{info}</p>
+
                         <p>
                             <a target="_blank" href={url}>
                                 {newUrl}

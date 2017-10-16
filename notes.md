@@ -1,13 +1,51 @@
-Notes
------
+Other Sites
+===========
 
-Progressive web apps
+www.bradford-theatres.co.uk
+www.polapplication.co.uk
+www.tradegardenhealth.com
+www.harrogatespring.com
+www.apollomemory.com
+www.askdirect.co.uk
+www.britcom.co.uk
+www.christophernixon.co.uk
+www.eddisons.com
+www.expressbifoldingdoors.co.uk
+www.handyhousehold.co.uk
+www.multiflight.com
+www.naturesfeast.co.uk
+www.peckishbirdfood.com
+www.pelviva.com
+www.postofficecommunityfund.co.uk
+www.qwiddle.co.uk
+www.hirefox.com
+www.hireacamera.com
+www.tmrec.com
+www.yarnstories.com
+http://health.marksandspencer.com/ (Mobile Site)
+
+
+
+
+Progressive Web Apps
+====================
+
 Time to interactive on a 3g connection should be 5 seconds
 Average react app = (11 secs) on a 3g connection
 
 Service Workers
-PRPL
-Fiber ? 
+PRPL (Purple)
+
+Fiber
+----- 
+
+Improves percieved performance and responsiveness for complex react apps.
+Its a reconciliation algorithm
+new event 'shouldComponentUpdate' ?
+
+
+
+
 Server side rendering
 ---------------------
 
@@ -21,22 +59,18 @@ Instead we can render a stream from node, take the app and rather than rendering
 
 import {renderToStaticStream} from 'react-dom/server'
 app.get('*',(req,res) => {
-const context = {};
-rederToStaticStream(
-<Router context={context} location={req.url}>
-<App />
-</Router>
-)
-.pipe(res)
-.on('end', () => res.end());
+    const context = {};
+    rederToStaticStream(
+        <Router context={context} location={req.url}>
+            <App />
+        </Router>
+    )
+    .pipe(res)
+    .on('end', () => res.end());
 });
 
 React (16)
 Rather than render a string 
-
-
-
-
 
 Application shell ?
 
