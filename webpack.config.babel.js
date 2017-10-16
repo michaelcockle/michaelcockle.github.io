@@ -43,11 +43,11 @@ module.exports = {
     },
 
     devtool:   'cheap-eval-source-map',
-    //devtool: '#inline-source-map',
-    //devtool:   'eval-source-map',
-    //devtool:   'eval',
-    //devtool:   'cheap-module-eval-source-map',
     //devtool: 'source-map',
+    //devtool: 'inline-source-map',
+    //devtool:   'eval-source-map',
+    //devtool:   'cheap-module-eval-source-map',
+    //devtool:   'eval',
 
     output: {
         library: 'Example', // window.Example
@@ -72,30 +72,31 @@ module.exports = {
                 test: /\.json$/,
                 use: 'json-loader',
             },
+
             /*
              * Load inline styles
              * */
 
-            //{
-            //    test:    [
-            //        /\.scss$/
-            //    ],
-            //    exclude: /node_modules/,
-            //    loader:  "style-loader!css-loader!autoprefixer-loader!sass-loader"
-            //},
+            {
+                test:    [
+                    /\.scss$/
+                ],
+                exclude: /node_modules/,
+                loader:  ['style-loader', 'css-loader', 'autoprefixer-loader', 'sass-loader']
+            },
 
             /*
              * Inject style sheet
              * */
 
-            {
-                test: [/\.scss$/],
-                exclude: /node_modules/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: ['css-loader', 'autoprefixer-loader', 'sass-loader'],
-                }),
-            },
+            //{
+            //    test: [/\.scss$/],
+            //    exclude: /node_modules/,
+            //    use: ExtractTextPlugin.extract({
+            //        fallback: 'style-loader',
+            //        use: ['css-loader', 'autoprefixer-loader', 'sass-loader'],
+            //    }),
+            //},
         ],
     },
 
@@ -104,6 +105,8 @@ module.exports = {
         SASSWebpackPluginConfig,
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
+        new webpack.SourceMapDevToolPlugin({
+            filename: "[file].map"
+        }),
     ],
-    //plugins:   [HTMLWebpackPluginConfig]
 }
