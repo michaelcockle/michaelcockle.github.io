@@ -22,6 +22,9 @@ www.hirefox.com
 www.hireacamera.com
 www.tmrec.com
 www.yarnstories.com
+
+
+ 
 http://health.marksandspencer.com/ (Mobile Site)
 
 
@@ -134,14 +137,55 @@ Fonts
 google analytics
 
 
-    {
-      "title": "Westland",
-      "year": "2015",
-      "description": "Serving stockists and consumers with a multi-faceted digital strategy",
-      "poster": "westland.jpg",
-      "url": "https://www.bathstore.com/",
-      "projectID": "westland",
-      "metadata": "CMS"
-    },
 
-
+{
+  "title": "Westland",
+  "year": "2015",
+  "description": "Serving stockists and consumers with a multi-faceted digital strategy",
+  "poster": "westland.jpg",
+  "url": "https://www.bathstore.com/",
+  "projectID": "westland",
+  "metadata": "CMS"
+},
+{
+  "title": "Weavabel",
+  "year": "2014",
+  "description": "Xxxxx xxxx",
+  "poster": "hitec.jpg",
+  "myRole": "Front End Build",
+  "url": "#",
+  "projectID": "weavabel",
+  "info": "Front End build and maintenance"
+},    
+{
+  "title": "M & S",
+  "year": "2003",
+  "description": "A single cohesive brand proposition",
+  "poster": "marks-and-spencers.jpg",
+  "myRole": "Front End Build",
+  "url": "#",
+  "projectID": "marks-and-spencers",
+  "metadata": "mobile"
+},
+{
+  "title": "Rural Insurance Kiosk",
+  "year": "2015",
+  "description": "xxxxx xxxxx",
+  "poster": "bathstore.jpg",
+  "myRole": "Front End Build",
+  "url": "#",
+  "projectID": "rural-insurance-kiosk",
+  "metadata": "brochure kiosk",
+  "info": "Front End build"
+},
+{
+  "title": "Childrens Hydration",
+  "year": "2016",
+  "description": "Animation SVG",
+  "poster": "bathstore.jpg",
+  "myRole": "Front End Build",
+  "url": "#",
+  "projectID": "hydration",
+  "metadata": "brochure SVG",
+  "info": "Front End build and maintenance"
+}

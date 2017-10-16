@@ -48,7 +48,7 @@
       "title": "Efstas",
       "year": "2015",
       "description": "Functional Safety Training and Services Ltd",
-      "poster": "hitec.jpg",
+      "poster": "efstas.jpg",
       "myRole": "Front End Build",
       "url": "http://www.efstas.com/",
       "projectID": "efstas",
@@ -65,16 +65,6 @@
       "projectID": "hi-tec",
       "metadata": "",
       "info": "Front End: bespoke projects"
-    },
-    {
-      "title": "Weavabel",
-      "year": "2014",
-      "description": "Xxxxx xxxx",
-      "poster": "hitec.jpg",
-      "myRole": "Front End Build",
-      "url": "#",
-      "projectID": "weavabel",
-      "info": "Front End build and maintenance"
     },
     {
       "title": "Sun Branding",
@@ -102,7 +92,7 @@
       "title": "Range Right",
       "year": "2017",
       "description": "Wholesale delivery of firearms and shooting equipment to the trade.",
-      "poster": "bathstore.jpg",
+      "poster": "rangeright.jpg",
       "myRole": "Front End Build",
       "url": "http://www.range-right.co.uk/",
       "projectID": "rangeright",
@@ -113,22 +103,12 @@
       "title": "Sidhil",
       "year": "2014",
       "description": "One of Europe’s foremost manufacturers of hospital and home health care furniture and accessories.",
-      "poster": "bathstore.jpg",
+      "poster": "sidhil.jpg",
       "myRole": "Front End Build",
       "url": "https://www.sidhil.com/",
       "projectID": "sidhil",
       "metadata": "CMS",
       "info": "Front End build and maintenance"
-    },
-    {
-      "title": "M & S",
-      "year": "2003",
-      "description": "A single cohesive brand proposition",
-      "poster": "marks-and-spencers.jpg",
-      "myRole": "Front End Build",
-      "url": "#",
-      "projectID": "marks-and-spencers",
-      "metadata": "mobile"
     },
     {
       "title": "Gardenhealth",
@@ -155,10 +135,10 @@
     {
       "title": "Go Go Flo",
       "year": "2015",
-      "description": "xxxxxxome.",
-      "poster": "bathstore.jpg",
+      "description": "Instantly connecting temporary healthcare professionals with NHS and private sector shifts.",
+      "poster": "gogoflo.jpg",
       "myRole": "Front End Build",
-      "url": "#",
+      "url": "https://gogoflo.com/",
       "projectID": "gogoflo",
       "metadata": "brochure",
       "info": "Front End build and maintenance"
@@ -167,9 +147,9 @@
       "title": "Kitagawa",
       "year": "2015",
       "description": "Kitagawa is a Japanese mixed engineering group founded some 75 years ago and listed on the Tokyo stock exchange.",
-      "poster": "https://www.kitagawa.global/en",
+      "poster": "kitagawa.jpg",
       "myRole": "Front End Build",
-      "url": "https://www.kitagawa.global/en/about",
+      "url": "https://www.kitagawa.global/en/",
       "projectID": "kitagawa",
       "metadata": "CMS ecommerce multi-lingual",
       "info": "Front End build and maintenance"
@@ -178,7 +158,7 @@
       "title": "Uk / Irish Gold Bullion",
       "year": "2016",
       "description": "Irish Gold Bullion is a leading dealer of silver and gold bullion online.",
-      "poster": "bathstore.jpg",
+      "poster": "irish-gold-bullion.jpg",
       "myRole": "Front End Build",
       "url": "https://irishgoldbullion.ie/",
       "projectID": "ukgoldbullion",
@@ -189,7 +169,7 @@
       "title": "Camphill Village Trust",
       "year": "2015",
       "description": "Camphill Village Trust provides a home within a supportive community environment for people of all abilities.",
-      "poster": "bathstore.jpg",
+      "poster": "camphill.jpg",
       "myRole": "Front End Build",
       "url": "https://www.cvt.org.uk/",
       "projectID": "cvt",
@@ -197,21 +177,10 @@
       "info": "Front End build and maintenance"
     },
     {
-      "title": "Rural Insurance Kiosk",
-      "year": "2015",
-      "description": "xxxxx xxxxx",
-      "poster": "bathstore.jpg",
-      "myRole": "Front End Build",
-      "url": "#",
-      "projectID": "rural-insurance-kiosk",
-      "metadata": "brochure kiosk",
-      "info": "Front End build"
-    },
-    {
       "title": "9xb",
       "year": "2015",
       "description": "Specialist digital agency delivering cutting edge digital projects since 2004.",
-      "poster": "9xb.jpg",
+      "poster": "xb9.jpg",
       "myRole": "Front End Build",
       "url": "https://9xb.com",
       "projectID": "9xb",
@@ -222,22 +191,11 @@
       "title": "Plasmor",
       "year": "2016",
       "description": "Plasmor Limited is a privately owned building block and concrete block paving manufacturer.",
-      "poster": "bathstore.jpg",
+      "poster": "plasmor.jpg",
       "myRole": "Front End Build",
       "url": "https://www.plasmor.co.uk/",
       "projectID": "plasmor",
       "metadata": "CMS",
-      "info": "Front End build and maintenance"
-    },
-    {
-      "title": "Childrens Hydration",
-      "year": "2016",
-      "description": "Animation SVG",
-      "poster": "bathstore.jpg",
-      "myRole": "Front End Build",
-      "url": "#",
-      "projectID": "hydration",
-      "metadata": "brochure SVG",
       "info": "Front End build and maintenance"
     }
   ]
