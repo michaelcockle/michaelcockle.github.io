@@ -21,11 +21,13 @@ import transitions from './functions/transitions'
 transitions()
 
 import Work from './Work'
+
 import About from './About'
 import Details from './Details'
 import Animation from './Animation'
 import Intro from './Intro'
-import Generic from './Generic'
+
+//import Generic from './Generic'
 
 const FourOhFour = () => <h1>404</h1>
 
@@ -140,7 +142,12 @@ class App extends Component {
                                     <Intro earl="hello world" />
                                 )}
                             />
-                            <Route path="/generic" component={Generic} />
+
+                            {/*<Route path="/generic" component={Generic} />*/}
+
+                            <Route path="/generic" component={props => <AsyncRoute props={props} loadingPromise={import('./Generic')} />} />
+
+
                             <Route component={FourOhFour} />
                         </AnimatedSwitch>
                     </Switch>

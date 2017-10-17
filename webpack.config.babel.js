@@ -31,18 +31,18 @@ module.exports = {
         publicPath: '/',
         historyApiFallback: true,
         stats: {
-            // Config for minimal console.log mess.
-            assets: false,
             colors: true,
+            reasons: true,
+            chunks: false,
             version: false,
             hash: false,
             timings: false,
             chunks: false,
-            chunkModules: false
-        }
+            chunkModules: false,
+        },
     },
 
-    devtool:   'cheap-eval-source-map',
+    devtool: 'cheap-eval-source-map',
     //devtool: 'source-map',
     //devtool: 'inline-source-map',
     //devtool:   'eval-source-map',
@@ -78,11 +78,14 @@ module.exports = {
              * */
 
             {
-                test:    [
-                    /\.scss$/
-                ],
+                test: [/\.scss$/],
                 exclude: /node_modules/,
-                loader:  ['style-loader', 'css-loader', 'autoprefixer-loader', 'sass-loader']
+                loader: [
+                    'style-loader',
+                    'css-loader',
+                    'autoprefixer-loader',
+                    'sass-loader',
+                ],
             },
 
             /*
@@ -106,7 +109,7 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
         new webpack.SourceMapDevToolPlugin({
-            filename: "[file].map"
+            filename: '[file].map',
         }),
     ],
 }
