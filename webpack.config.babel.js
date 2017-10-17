@@ -32,7 +32,7 @@ module.exports = {
         historyApiFallback: true,
         stats: {
             colors: true,
-            reasons: true,
+            reasons: false,
             chunks: false,
             version: false,
             hash: false,

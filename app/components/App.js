@@ -18,15 +18,14 @@ import AsyncRoute from './AsyncRoute'
 import preload from '../../data/data-portfolio-cards.json'
 
 import transitions from './functions/transitions'
-transitions()
-
-import Work from './Work'
+transitions();
 
 import About from './About'
 import Details from './Details'
 import Animation from './Animation'
 import Intro from './Intro'
 
+//import Work from './Work'
 //import Generic from './Generic'
 
 const FourOhFour = () => <h1>404</h1>
@@ -72,7 +71,7 @@ class App extends Component {
         super(props)
 
         this.state = {
-            newInfo: 'Home'
+            newInfo: 'Home',
         }
     }
 
@@ -116,12 +115,27 @@ class App extends Component {
                                 path="/"
                                 component={props => <About name={what} />}
                             />
+
+                            {/*<Route*/}
+                            {/*path="/work"*/}
+                            {/*component={props => (*/}
+                            {/*<Work abba={props.match}  shows={preload.shows} {...props} />*/}
+                            {/*)}*/}
+                            {/*/>*/}
+
                             <Route
                                 path="/work"
                                 component={props => (
-                                    <Work abba={props.match}  shows={preload.shows} {...props} />
+                                    <AsyncRoute
+                                        loadingPromise={import('./Work')}
+                                        props={Object.assign(
+                                            { shows: preload.shows },
+                                            props,
+                                        )}
+                                    />
                                 )}
                             />
+
                             <Route
                                 path="/details/:id"
                                 component={props => {
@@ -145,8 +159,15 @@ class App extends Component {
 
                             {/*<Route path="/generic" component={Generic} />*/}
 
-                            <Route path="/generic" component={props => <AsyncRoute props={props} loadingPromise={import('./Generic')} />} />
-
+                            <Route
+                                path="/generic"
+                                component={props => (
+                                    <AsyncRoute
+                                        props={props}
+                                        loadingPromise={import('./Generic')}
+                                    />
+                                )}
+                            />
 
                             <Route component={FourOhFour} />
                         </AnimatedSwitch>
