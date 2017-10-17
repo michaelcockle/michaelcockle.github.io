@@ -18,13 +18,13 @@ import AsyncRoute from './AsyncRoute'
 import preload from '../../data/data-portfolio-cards.json'
 
 import transitions from './functions/transitions'
-transitions();
+transitions()
 
 import About from './About'
-import Details from './Details'
 import Animation from './Animation'
 import Intro from './Intro'
 
+//import Details from './Details'
 //import Work from './Work'
 //import Generic from './Generic'
 
@@ -136,17 +136,41 @@ class App extends Component {
                                 )}
                             />
 
+                            {/*<Route*/}
+                                {/*path="/details/:id"*/}
+                                {/*component={props => {*/}
+                                    {/*const selectedShow = preload.shows.find(*/}
+                                        {/*show =>*/}
+                                            {/*props.match.params.id ===*/}
+                                            {/*show.projectID,*/}
+                                    {/*)*/}
+                                    {/*return <Details show={selectedShow} />*/}
+                                {/*}}*/}
+                            {/*/>*/}
+
                             <Route
                                 path="/details/:id"
-                                component={props => {
+                                component={(props: { match: Match }) => {
                                     const selectedShow = preload.shows.find(
-                                        show =>
+                                        (show: Show) =>
                                             props.match.params.id ===
                                             show.projectID,
                                     )
-                                    return <Details show={selectedShow} />
+                                    return (
+                                        <AsyncRoute
+                                            loadingPromise={import('./Details')}
+                                            props={Object.assign(
+                                                {
+                                                    show: selectedShow,
+                                                    match: {},
+                                                },
+                                                props,
+                                            )}
+                                        />
+                                    )
                                 }}
                             />
+
                             <Route path="/topics" component={Topics} />
                             <Route path="/animation" component={Animation} />
 
