@@ -1,25 +1,50 @@
-var path = require('path');
-var webpack = require('webpack');
-var express = require('express');
-var config = require('./webpack.config');
+/* eslint no-console:0 */
+require('babel-register');
 
-var app = express();
-var compiler = webpack(config);
+const express = require('express');
+const React = require('react');
+const ReactDOMServer = require('react-dom/server');
+const ReactRouter = require('react-router-dom');
+const _ = require('lodash');
+const fs = require('fs');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpackHotMiddleware = require('webpack-hot-middleware');
+const compression = require('compression');
+const webpack = require('webpack');
+const config = require('./webpack.config');
+const App = require('./js/App').default;
 
-app.use(require('webpack-dev-middleware')(compiler, {
-    publicPath: config.output.publicPath
-}));
+const StaticRouter = ReactRouter.StaticRouter;
+const port = 8080;
+const baseTemplate = fs.readFileSync('./index.html');
+const template = _.template(baseTemplate);
 
-app.use(require('webpack-hot-middleware')(compiler));
+const server = express();
+server.use(compression());
+if (process.env.NODE_ENV === 'development') {
+  const compiler = webpack(config);
+  server.use(
+    webpackDevMiddleware(compiler, {
+      publicPath: config.output.publicPath
+    })
+  );
+  server.use(webpackHotMiddleware(compiler));
+}
+server.use('/public', express.static('./public'));
 
-app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'index.html'));
+server.use((req, res) => {
+  const context = {};
+  const body = ReactDOMServer.renderToString(
+    React.createElement(StaticRouter, { location: req.url, context }, React.createElement(App))
+  );
+
+  if (context.url) {
+    res.redirect(301, context.url);
+  }
+
+  res.write(template({ body }));
+  res.end();
 });
 
-app.listen(3000, function(err) {
-    if (err) {
-        return console.error(err);
-    }
-
-    console.log('Listening at http://localhost:3000/');
-});
+console.log(`listening on ${port}`);
+server.listen(port);
