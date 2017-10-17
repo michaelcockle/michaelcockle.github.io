@@ -13,6 +13,7 @@ import CSSTransition from 'react-transition-group/CSSTransition'
 import TransitionGroup from 'react-transition-group/Transition'
 import { AnimatedSwitch, spring, AnimatedRoute } from 'react-router-transition'
 import { withRouter } from 'react-router-dom'
+import AsyncRoute from './AsyncRoute'
 
 import preload from '../../data/data-portfolio-cards.json'
 
