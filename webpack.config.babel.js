@@ -17,7 +17,8 @@ let SASSWebpackPluginConfig = new ExtractTextPlugin({
     allChunks: true,
 })
 
-module.exports = {
+//module.exports = {
+const config = {
     entry: [
         'react-hot-loader/patch',
         'webpack-dev-server/client?http://localhost:8081',
@@ -28,6 +29,7 @@ module.exports = {
     devServer: {
         hot: true,
         inline: true,
+        //publicPath: '/user/michaelcockle.github.io/dist/',
         publicPath: '/',
         historyApiFallback: true,
         stats: {
@@ -54,6 +56,7 @@ module.exports = {
         path: __dirname + '/dist',
         filename: 'index_bundle.js',
         publicPath: '/',
+        //publicPath: '/user/michaelcockle.github.io/dist/'
     },
 
     resolve: {
@@ -113,3 +116,15 @@ module.exports = {
         }),
     ],
 }
+
+if (process.env.NODE_ENV === 'production') {
+    config.entry = './app/index.js';
+    config.devtool = false;
+    config.plugins = [];
+}
+
+//if (process.env.NODE_ENV === 'development') {
+//    config.entry.unshift('webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000');
+//}
+
+module.exports = config;
