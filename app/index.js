@@ -1,12 +1,18 @@
 import React from 'react'
 import {render} from 'react-dom'
 import App from './components/App'
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch,
+    Match,
+} from 'react-router-dom'
 
-require('./styles/app.scss')
 
 
 const renderApp = () => {
-    render(<App/>, document.getElementById('app'))
+    render( <Router><App/></Router>, document.getElementById('app'))
 }
 
 renderApp()

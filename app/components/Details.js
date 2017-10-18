@@ -41,16 +41,14 @@ class Details extends Component {
                     </div>
 
                     <div className="show-card__details-info">
-
                         <h1>{title}</h1>
                         <h2>({year})</h2>
 
                         <h3>Description</h3>
                         <p>{description}</p>
+                        <h3>Description</h3>
 
-                        <h4>Info</h4>
                         <p>{info}</p>
-
                         <p>
                             <a target="_blank" href={url}>
                                 {newUrl}

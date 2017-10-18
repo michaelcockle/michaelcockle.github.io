@@ -11,12 +11,12 @@ const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 const compression = require('compression');
 const webpack = require('webpack');
-const config = require('./webpack.config');
-const App = require('./js/App').default;
+const config = require('./webpack.config.babel');
+const App = require('./app/components/App').default;
 
 const StaticRouter = ReactRouter.StaticRouter;
 const port = 8080;
-const baseTemplate = fs.readFileSync('./index.html');
+const baseTemplate = fs.readFileSync('./app/index.html');
 const template = _.template(baseTemplate);
 
 const server = express();
