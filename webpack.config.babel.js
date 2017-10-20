@@ -117,6 +117,9 @@ const config = {
     ],
 }
 
+//console.log(process.env);
+//console.log(process.env.NODE_ENV); // undefined
+
 if (process.env.NODE_ENV === 'production') {
     config.entry = './app/index.js';
     config.devtool = false;

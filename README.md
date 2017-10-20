@@ -6,6 +6,12 @@ NODE_ENV=server node server.js
 http://localhost/work
 
 
+NODE ENV not set as production so run > 
+NODE_ENV=production webpack -p
+
+
+
+
 Performance
 ===========
 

@@ -1,3 +1,8 @@
+git subtree push --prefix dist origin gh-pages
+
+http://localhost/user/michaelcockle.github.io/dist/
+
+
 Other Sites
 ===========
 
