@@ -30,7 +30,7 @@ const config = {
         hot: true,
         inline: true,
         //publicPath: '/user/michaelcockle.github.io/dist/',
-        publicPath: '/',
+        publicPath: '/dist',
         historyApiFallback: true,
         stats: {
             colors: true,
@@ -55,7 +55,7 @@ const config = {
         library: 'Example', // window.Example
         path: __dirname + '/dist',
         filename: 'index_bundle.js',
-        publicPath: '/',
+        publicPath: '/dist',
         //publicPath: '/user/michaelcockle.github.io/dist/'
     },
 
