@@ -1,5 +1,5 @@
-Expresss
-========
+Express
+=======
 run >
 NODE_ENV=server node server.js
 
@@ -11,14 +11,13 @@ NODE_ENV=production webpack -p
 
 
 Source map options
+-------------------
 
-    //devtool: 'source-map',
-    //devtool: 'inline-source-map',
-    //devtool:   'eval-source-map',
-    //devtool:   'cheap-module-eval-source-map',
-    //devtool:   'eval',
-
-
+devtool: 'source-map',
+devtool: 'inline-source-map',
+devtool:   'eval-source-map',
+devtool:   'cheap-module-eval-source-map',
+devtool:   'eval',
 
 
 Performance

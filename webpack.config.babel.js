@@ -9,14 +9,13 @@ let ExtractTextPlugin = require('extract-text-webpack-plugin')
 let HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
     template: __dirname + '/app/index.html',
     filename: 'index.html',
-    inject: 'body',
+    inject:   'body',
 })
 
 let SASSWebpackPluginConfig = new ExtractTextPlugin({
-    filename: 'main.css',
+    filename:  'main.css',
     allChunks: true,
 })
-
 
 console.log('********** Webpack.config.babel.js **********');
 console.log('_____________________________________________');
@@ -27,7 +26,6 @@ console.log(process.env.USER, ': ', process.env.HOME);
 console.log('_____________________________________________');
 //console.log('********** process.env = ', process.env);
 //console.log('_____________________________________________');
-
 
 //module.exports = {
 const config = {
@@ -40,19 +38,19 @@ const config = {
     ],
 
     devServer: {
-        hot: true,
-        inline: true,
+        hot:                true,
+        inline:             true,
         //publicPath: '/user/michaelcockle.github.io/dist/',
-        publicPath: '/',
+        publicPath:         '/',
         historyApiFallback: true,
-        stats: {
-            colors: true,
-            reasons: false,
-            chunks: false,
-            version: false,
-            hash: false,
-            timings: false,
-            chunks: false,
+        stats:              {
+            colors:       true,
+            reasons:      false,
+            chunks:       false,
+            version:      false,
+            hash:         false,
+            timings:      false,
+            chunks:       false,
             chunkModules: false,
         },
     },
@@ -60,10 +58,11 @@ const config = {
     devtool: 'eval',
 
     output: {
-        library: 'Example', // window.Example
-        path: __dirname + '/dist',
-        filename: 'index_bundle.js',
+        library:    'Example', // window.Example
+        path:       __dirname + '/dist',
+        filename:   'index_bundle.js',
         publicPath: '/',
+
         //publicPath: '/user/michaelcockle.github.io/dist/'
     },
 
@@ -77,11 +76,11 @@ const config = {
                 test: [/\.js$/, /\.jsx?$/],
 
                 exclude: /node_modules/,
-                use: 'babel-loader',
+                use:     'babel-loader',
             },
             {
                 test: /\.json$/,
-                use: 'json-loader',
+                use:  'json-loader',
             },
 
             /*
@@ -89,9 +88,9 @@ const config = {
              * */
 
             {
-                test: [/\.scss$/],
+                test:    [/\.scss$/],
                 exclude: /node_modules/,
-                loader: [
+                loader:  [
                     'style-loader',
                     'css-loader',
                     'autoprefixer-loader',
@@ -125,11 +124,18 @@ const config = {
     ],
 }
 
-
 if (process.env.NODE_ENV === 'production') {
-    config.entry = './app/index.js';
+    config.entry   = './app/index.js';
     config.devtool = false;
-    config.plugins = [];
+    config.plugins = [HTMLWebpackPluginConfig];
+    config.output  = {
+        library:    'Example', // window.Example
+        path:       __dirname + '/',
+        filename:   'index_bundle.js',
+        //publicPath: '/',
+        publicPath: '/user/michaelcockle.github.io/'
+
+    };
 
 }
 
