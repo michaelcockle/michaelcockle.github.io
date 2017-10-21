@@ -17,6 +17,18 @@ let SASSWebpackPluginConfig = new ExtractTextPlugin({
     allChunks: true,
 })
 
+
+console.log('********** Webpack.config.babel.js **********');
+console.log('_____________________________________________');
+
+console.log('Node ENV = ', process.env.NODE_ENV, ' *******');
+console.log('_____________________________________________');
+console.log(process.env.USER, ': ', process.env.HOME);
+console.log('_____________________________________________');
+//console.log('********** process.env = ', process.env);
+//console.log('_____________________________________________');
+
+
 //module.exports = {
 const config = {
 
@@ -113,13 +125,12 @@ const config = {
     ],
 }
 
-//console.log(process.env);
-console.log(process.env.NODE_ENV); // undefined
 
 if (process.env.NODE_ENV === 'production') {
     config.entry = './app/index.js';
     config.devtool = false;
     config.plugins = [];
+
 }
 
 //if (process.env.NODE_ENV === 'development') {
