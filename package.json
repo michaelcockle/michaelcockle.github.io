@@ -7,7 +7,7 @@
     "lint": "eslint js/**/*.js wepack.config.js",
     "test": "karma start",
     "start": "webpack-dev-server -d --colors",
-    "production": "webpack -p"
+    "production": "NODE_ENV=production webpack -p"
   },
   "repository": {
     "type": "git",

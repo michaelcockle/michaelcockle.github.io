@@ -45,7 +45,7 @@ const config = {
         },
     },
 
-    devtool: 'cheap-eval-source-map',
+    devtool: 'eval',
 
     output: {
         library: 'Example', // window.Example
