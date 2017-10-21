@@ -138,7 +138,7 @@ if (process.env.NODE_ENV === 'production') {
         path:       __dirname + '/dist',
         filename:   'index.js',
         //publicPath: '/',
-        publicPath: 'dist/'
+        publicPath: '/'
 
     };
 
