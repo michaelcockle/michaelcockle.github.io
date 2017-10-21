@@ -136,7 +136,7 @@ if (process.env.NODE_ENV === 'production') {
     config.plugins = [prodHTMLWebpackPluginConfig];
     config.output  = {
         path:       __dirname + '/dist',
-        filename:   'index.js',
+        filename:   'dist/index.js',
         //publicPath: '/',
         publicPath: '/'
 
