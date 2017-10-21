@@ -35,7 +35,7 @@ class Details extends Component {
                 <section className="show-card__details">
                     <div className="show-card__details-img">
                         <img
-                            src={`/dist/img/posters/${poster}`}
+                            src={`/assets/img/posters/${poster}`}
                             alt={`project is ${title} `}
                         />
                     </div>
