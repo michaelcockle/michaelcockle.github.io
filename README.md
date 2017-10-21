@@ -10,6 +10,15 @@ NODE ENV not set as production so run >
 NODE_ENV=production webpack -p
 
 
+Source map options
+
+    //devtool: 'source-map',
+    //devtool: 'inline-source-map',
+    //devtool:   'eval-source-map',
+    //devtool:   'cheap-module-eval-source-map',
+    //devtool:   'eval',
+
+
 
 
 Performance

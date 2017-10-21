@@ -3,6 +3,29 @@ git subtree push --prefix dist origin gh-pages
 http://localhost/user/michaelcockle.github.io/dist/
 
 
+
+
+where to save components ?
+how reuse ?
+git ?
+
+about - linkedin profile
+
+metaflow.co.uk
+D3, data visualisation
+
+green socks
+animation
+
+goldsboroughcricketclub
+
+
+
+https://www.bathstore.com/bathroom-ideas/bathroom-genie
+
+
+
+
 Other Sites
 ===========
 

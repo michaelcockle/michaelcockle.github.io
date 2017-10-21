@@ -19,6 +19,7 @@ let SASSWebpackPluginConfig = new ExtractTextPlugin({
 
 //module.exports = {
 const config = {
+
     entry: [
         'react-hot-loader/patch',
         'webpack-dev-server/client?http://localhost:8081',
@@ -30,7 +31,7 @@ const config = {
         hot: true,
         inline: true,
         //publicPath: '/user/michaelcockle.github.io/dist/',
-        publicPath: '/dist',
+        publicPath: '/',
         historyApiFallback: true,
         stats: {
             colors: true,
@@ -45,17 +46,12 @@ const config = {
     },
 
     devtool: 'cheap-eval-source-map',
-    //devtool: 'source-map',
-    //devtool: 'inline-source-map',
-    //devtool:   'eval-source-map',
-    //devtool:   'cheap-module-eval-source-map',
-    //devtool:   'eval',
 
     output: {
         library: 'Example', // window.Example
         path: __dirname + '/dist',
         filename: 'index_bundle.js',
-        publicPath: '/dist',
+        publicPath: '/',
         //publicPath: '/user/michaelcockle.github.io/dist/'
     },
 
@@ -118,7 +114,7 @@ const config = {
 }
 
 //console.log(process.env);
-//console.log(process.env.NODE_ENV); // undefined
+console.log(process.env.NODE_ENV); // undefined
 
 if (process.env.NODE_ENV === 'production') {
     config.entry = './app/index.js';
