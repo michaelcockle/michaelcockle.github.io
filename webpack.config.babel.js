@@ -12,6 +12,12 @@ let HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
     inject:   'body',
 })
 
+let prodHTMLWebpackPluginConfig = new HtmlWebpackPlugin({
+    template: __dirname + '/app/index.html',
+    filename: 'index.html',
+    inject:   'body',
+})
+
 let SASSWebpackPluginConfig = new ExtractTextPlugin({
     filename:  'main.css',
     allChunks: true,
@@ -127,13 +133,12 @@ const config = {
 if (process.env.NODE_ENV === 'production') {
     config.entry   = './app/index.js';
     config.devtool = false;
-    config.plugins = [HTMLWebpackPluginConfig];
+    config.plugins = [prodHTMLWebpackPluginConfig];
     config.output  = {
-        library:    'Example', // window.Example
-        path:       __dirname + '/',
-        filename:   'index_bundle.js',
+        path:       __dirname + '/dist',
+        filename:   'index.js',
         //publicPath: '/',
-        publicPath: '/user/michaelcockle.github.io/'
+        publicPath: '/'
 
     };
 
