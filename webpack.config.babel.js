@@ -14,7 +14,7 @@ let HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 
 let prodHTMLWebpackPluginConfig = new HtmlWebpackPlugin({
     template: __dirname + '/app/index.html',
-    filename: 'index.html',
+    filename: '../index.html',
     inject:   'body',
 })
 
@@ -23,15 +23,9 @@ let SASSWebpackPluginConfig = new ExtractTextPlugin({
     allChunks: true,
 })
 
-console.log('********** Webpack.config.babel.js **********');
-console.log('_____________________________________________');
-
-console.log('Node ENV = ', process.env.NODE_ENV, ' *******');
-console.log('_____________________________________________');
-console.log(process.env.USER, ': ', process.env.HOME);
+console.log('ENV: ', process.env.NODE_ENV, ': ', process.env.USER, ': ', process.env.HOME);
 console.log('_____________________________________________');
 //console.log('********** process.env = ', process.env);
-//console.log('_____________________________________________');
 
 //module.exports = {
 const config = {
@@ -67,7 +61,7 @@ const config = {
         library:    'Example', // window.Example
         path:       __dirname + '/dist',
         filename:   'index_bundle.js',
-        publicPath: '/',
+        publicPath: '/dist',
 
         //publicPath: '/user/michaelcockle.github.io/dist/'
     },
@@ -134,8 +128,7 @@ if (process.env.NODE_ENV === 'production') {
     config.entry   = './app/index.js';
     config.devtool = false;
     config.plugins = [prodHTMLWebpackPluginConfig];
-
-
+    //publicPath: '/user/michaelcockle.github.io/dist/'
 }
 
 //if (process.env.NODE_ENV === 'development') {
