@@ -61,7 +61,7 @@ const config = {
         library:    'Example', // window.Example
         path:       __dirname + '/dist',
         filename:   'index_bundle.js',
-        publicPath: '/dist',
+        publicPath: '/dist/',
 
         //publicPath: '/user/michaelcockle.github.io/dist/'
     },
