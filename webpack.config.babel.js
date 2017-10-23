@@ -61,7 +61,7 @@ const config = {
         library:    'Example', // window.Example
         path:       __dirname + '/dist',
         filename:   'index_bundle.js',
-        publicPath: '/dist/',
+        publicPath: '/',
 
         //publicPath: '/user/michaelcockle.github.io/dist/'
     },
@@ -128,6 +128,7 @@ if (process.env.NODE_ENV === 'production') {
     config.entry   = './app/index.js';
     config.devtool = false;
     config.plugins = [prodHTMLWebpackPluginConfig];
+    config.output.publicPath = '/dist/'
     //publicPath: '/user/michaelcockle.github.io/dist/'
 }
 
