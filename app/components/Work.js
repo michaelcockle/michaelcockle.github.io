@@ -30,8 +30,10 @@ class Work extends Component {
     render() {
         return (
             <div className="route__item-wrapper">
-                <h1>{this.props.match.url}</h1>
-                {/*<h2>-- {this.props.test} **</h2>*/}
+
+                <h1 className="heading-page">Work</h1>
+
+                {/*<h1>{this.props.match.url}</h1>*/}
                 <Header
                     searchTerm={this.state.searchTerm}
                     showSearch="yes"
