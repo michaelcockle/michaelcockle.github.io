@@ -29,7 +29,7 @@ class ShowCard extends React.Component {
             <Wrapper className="show-card" to={`/details/${this.props.projectID}`}>
                 <Image
                     alt={`${this.props.title} Show Poster`}
-                    src={`/assets/img/posters/${this.props.poster}`}
+                    src={`/assets/img/thumbs/${this.props.poster}`}
                 />
                 <div className="show-card__content-wrap">
                     <h3 className="show-card__title">{this.props.title}</h3>
