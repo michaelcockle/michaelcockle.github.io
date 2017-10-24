@@ -15,9 +15,9 @@ class Work extends Component {
 
     componentDidMount() {
         console.log('Work: Component Did Mount')
-        console.log(this)
-        console.log('--------------------------')
-        console.log(this.props.match.url)
+        //console.log(this)
+        //console.log('---------------------**  -----')
+        //console.log(this.props.match.url)
         //console.log(this.props.match.path);
         //console.log(this.props.abba.isExact)
         //console.log(this.props.history);

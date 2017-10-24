@@ -81,18 +81,18 @@ class App extends Component {
                     <li>
                         <Link to="/work">Work</Link>
                     </li>
-                    <li>
-                        <Link to="/topics">Topics</Link>
-                    </li>
-                    <li>
-                        <Link to="/animation">Animation</Link>
-                    </li>
-                    <li>
-                        <Link to="/intro">Intro</Link>
-                    </li>
-                    <li>
-                        <Link to="/generic">Generic</Link>
-                    </li>
+                    {/*<li>*/}
+                        {/*<Link to="/topics">Topics</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                        {/*<Link to="/animation">Animation</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                        {/*<Link to="/intro">Intro</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                        {/*<Link to="/generic">Generic</Link>*/}
+                    {/*</li>*/}
                 </ul>
 
                 <Switch>

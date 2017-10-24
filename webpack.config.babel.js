@@ -55,7 +55,7 @@ const config = {
         },
     },
 
-    devtool: 'eval',
+    devtool: 'cheap-eval-source-map',
 
     output: {
         library: 'MichaelCockle', // window.MichaelCockle why ?
