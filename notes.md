@@ -2,7 +2,17 @@ git subtree push --prefix dist origin gh-pages
 
 http://localhost/user/michaelcockle.github.io/dist/
 
-
+    {
+      "title": "English Cheesecake",
+      "year": "2016",
+      "description": "xxxx xxxx.",
+      "poster": "bathstore.jpg",
+      "myRole": "Front End Build",
+      "url": "http://englishcheesecake.com/",
+      "projectID": "cheesecake",
+      "metadata": "CMS",
+      "info": "Front End build and maintenance"
+    },
 
 
 where to save components ?

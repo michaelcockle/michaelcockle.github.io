@@ -19,8 +19,13 @@
 }
 
 .show-card__details-info {
+    h1 {
+        margin-bottom: 1rem;
+    }
+    h2 {
+        margin-bottom: .5rem;
+    }
     a {
-        //border: solid 1px red;
         &:hover {
             text-decoration: underline;
         }
