@@ -3,19 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <title>Michael Cockle</title>
-    <style></style>
+    <style>
+
+        body {
+            background-color: #3a3a4a;
+            padding: 2rem;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .container {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 960px;
+            padding: 1rem 0.5rem;
+        }
+
+        h1 {
+            margin: 0;
+            line-height: 1;
+            font-weight: 300;
+            color: yellow;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .header-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            flex-direction: column;
+        }
+
+        @media all and (min-width: 768px) {
+            .header-wrap {
+                flex-direction: row;
+            }
+        }
+
+
+    </style>
 </head>
 
 <body>
-
-    <div class="container">
-
-        <header class="header-wrap">
-            <h1>Michael Cockle</h1>
-            <h2>Web developer</h2>
-        </header>
-        <main id="app" class="main-wrap" /></div>
-        <!--< % = body % > -->
+<div class="container">
+    <header class="header-wrap">
+        <h1>Michael Cockle:
+            <small>Web developer</small>
+        </h1>
+    </header>
+    <main id="app" class="main-wrap"/>
+</div>
+<!--< % = body % > -->
 </body>
 </html>
