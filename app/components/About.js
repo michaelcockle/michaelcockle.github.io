@@ -19,9 +19,11 @@ class About extends Component {
 
                 <Header showSearch="no" />
 
+<p className="lead-para">I am a front end web developer / designer with over 10 years of professional experience and more as a freelancer. I have worked in both the public and private sectors, in house and within agency environments. I have designed and built websites from concept to completion.</p>
+
+
                 {/*<h3>1: {this.state.infoCopy}</h3>*/}
                 {/*<h3>2: {this.props.name}</h3>*/}
-<p className="lead-para">I am a front end web developer / designer with over 10 years of professional experience and more as a freelancer. I have worked in both the public and private sectors, in house and within agency environments. I have designing and built websites from concept to completion.</p>
                 {/*<Link to="/details/ecp">Euro Car Parts</Link>*/}
                 {/*<Link to="/work">see all work</Link>*/}
 

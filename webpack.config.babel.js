@@ -32,8 +32,8 @@ console.log(
 //module.exports = {
 const config = {
     entry: [
-        'react-hot-loader/patch',
-        'webpack-dev-server/client?http://localhost:8081',
+        //'react-hot-loader/patch',
+        'webpack-dev-server/client?http://localhost:8080',
         'webpack/hot/only-dev-server',
         './app/index.js',
     ],
@@ -43,6 +43,9 @@ const config = {
         inline: true,
         publicPath: '/',
         historyApiFallback: true,
+
+        //host: 'localhost',
+        //port: 3000,
         stats: {
             colors: true,
             reasons: false,
@@ -55,7 +58,7 @@ const config = {
         },
     },
 
-    devtool: 'cheap-eval-source-map',
+    devtool: 'eval',
 
     output: {
         library: 'MichaelCockle', // window.MichaelCockle why ?
@@ -126,9 +129,7 @@ const config = {
         SASSWebpackPluginConfig,
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
-        new webpack.SourceMapDevToolPlugin({
-            filename: '[file].map',
-        }),
+
     ],
 }
 
