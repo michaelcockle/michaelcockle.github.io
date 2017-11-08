@@ -18,14 +18,12 @@
 
 .switch-wrapper, .route-wrapper {
     position: relative;
-    //border: solid 1px pink;
     > div {
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        //border: solid 1px cornflowerblue;
         display: block;
         //width: 100%;
         //height: 100%;
@@ -86,6 +84,19 @@
 }
 
 header {
+    input {
+        //border: solid 1px red;
+        border: none;
+        padding: .5rem 1rem;
+        border-radius: 2px;
+        outline: none;
+
+        //background-color: lighten( $brand-col, 30%);
+
+        //-webkit-appearance: none;
+        //-moz-appearance: none;
+
+    }
 }
 
 ul {
