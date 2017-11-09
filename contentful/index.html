@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <title>Michael Cockle Contentful</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109333883-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109333883-1');
+    </script>
+
+    <style>
+        body {
+            background-color: #3a3a4a;
+            padding: 2rem;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .container {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 960px;
+            padding: 1rem 0.5rem;
+        }
+
+        h1 {
+            margin: 0;
+            line-height: 1;
+            font-weight: 300;
+            color: yellow;
+            font-size: 2rem;
+        }
+
+        .header-wrap h1 {
+            text-align: center;
+
+        }
+
+        .header-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            flex-direction: column;
+        }
+
+        @media all and (min-width: 768px) {
+            .header-wrap {
+                flex-direction: row;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <header class="header-wrap">
+        <h1>Michael Cockle:
+            <small>Web developer</small>
+        </h1>
+    </header>
+</div>
+
+<main class="container">
+    <div id="content" class="content-container main-wrap"></div>
+</main>
+<script src="https://unpkg.com/contentful@latest/dist/contentful.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
