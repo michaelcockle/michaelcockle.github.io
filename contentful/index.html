@@ -60,7 +60,9 @@
                 flex-direction: row;
             }
         }
-
+.content-container {
+    color: white;
+}
 
     </style>
 </head>
@@ -76,10 +78,58 @@
 </div>
 
 <main class="container">
-    <div id="content" class="content-container main-wrap"></div>
+    <div id="contentDiv" class="content-container main-wrap"></div>
 </main>
-<script src="https://unpkg.com/contentful@latest/dist/contentful.min.js"></script>
-<script type="text/javascript" src="index.js"></script>
+<!--<script src="https://unpkg.com/contentful@latest/dist/contentful.min.js"></script>-->
+<!--<script type="text/javascript" src="index.js"></script>-->
+
+<script>
+    console.log('AJAX');
+
+    var request = new XMLHttpRequest();
+    request.open('GET', 'https://cdn.contentful.com/spaces/xq9fh8s1o76v/entries?access_token=f2b7ef5e7ac493e6714f70081a4d02ce892238ef8546d9e2704247e631f338ee', true);
+
+    request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+
+            var data = JSON.parse(request.responseText);
+
+            console.log(data);
+
+            var elemData = JSON.stringify(data);
+            console.log(typeof elemData);
+
+
+            var elem = document.getElementById("contentDiv");
+            console.log(elem);
+
+
+
+            elem.innerHTML += "<p><code>JSON: "  + elemData + "</code></p>";
+
+
+
+
+
+        } else {
+            console.log('reached our target server, but it returned an error');
+
+        }
+    };
+
+    request.onerror = function() {
+        console.log('Connection Error');
+        // There was a connection error of some sort
+    };
+
+    request.send();
+
+
+
+
+
+
+</script>
 
 </body>
 </html>

@@ -36,10 +36,12 @@ function runBoilerplate () {
 }
 
 function displayContentTypes () {
+
   console.log(chalk.green('Fetching and displaying Content Types ...'))
 
   return fetchContentTypes()
   .then((contentTypes) => {
+
     // Display a table with Content Type information
     const table = new Table({
       head: ['Id', 'Title', 'Fields']
@@ -57,11 +59,17 @@ function displayContentTypes () {
 }
 
 function displayEntries (contentTypes) {
-  console.log(chalk.green('Fetching and displaying Entries ...'))
 
+  console.log(chalk.green('Fetching and displaying Entries ...'))
+    //console.log('contentTypes ===== ', contentTypes)
   return Promise.all(contentTypes.map((contentType) => {
     return fetchEntriesForContentType(contentType)
     .then((entries) => {
+
+      //console.log('contentType ===== ', contentType)
+      //  console.log(chalk.yellow('contentType ...', contentType))
+      //console.log('entries ===== ', entries)
+
       console.log(`\These are the first 100 Entries for Content Type ${chalk.cyan(contentType.name)}:\n`)
 
       // Display a table with Entry information
@@ -69,12 +77,23 @@ function displayEntries (contentTypes) {
         head: ['Id', 'Title']
       })
       entries.forEach((entry) => {
+        //console.log('entry = ', entry);
+
         table.push([entry.sys.id, entry.fields[contentType.displayField] || '[empty]'])
+            //entry.sys.id, entry.fields[contentType.displayField], entry.fields.body || '[empty]'])
       })
+
+
       console.log(table.toString())
+
+
     })
   }))
 }
+
+
+
+
 
 // Load all Content Types in your space from Contentful
 function fetchContentTypes () {
@@ -97,6 +116,8 @@ function fetchEntriesForContentType (contentType) {
     console.error(error)
   })
 }
+
+
 
 // Start the boilerplate code
 runBoilerplate()
