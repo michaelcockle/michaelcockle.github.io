@@ -16,10 +16,17 @@ fetchPosts();
 
 console.log('------- ****** -------');
 console.log(getData);
-let dt = getData;
-//console.log(dt['data']);
+//let dt = getData;
+//console.log(dt.includes);
 
-console.log('------- ****** -------');
+//console.log('3: = ', typeof getData['data']);
+//console.log(getData.data);
+
+//getData.forEach(function(item){
+//    console.log(item);
+//});
+
+console.log('------- ¢¢¢¢¢¢¢ -------');
 
 
 const renderApp = () => {
