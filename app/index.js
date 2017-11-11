@@ -9,18 +9,19 @@ import {
     Match,
 } from 'react-router-dom'
 
-//import { FETCH_POSTS } from './components/cntful';
 import {fetchPosts, getData } from './components/cntful';
 fetchPosts();
 
 
 console.log('------- ****** -------');
-console.log(getData);
-//let dt = getData;
-//console.log(dt.includes);
 
-//console.log('3: = ', typeof getData['data']);
-//console.log(getData.data);
+console.log('fetchPosts = ', fetchPosts.value);
+
+console.log('getData ===== ', getData);
+
+
+console.log('------- ****** -------');
+
 
 //getData.forEach(function(item){
 //    console.log(item);
