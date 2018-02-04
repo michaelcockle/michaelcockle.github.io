@@ -31,7 +31,7 @@ class Work extends Component {
         return (
             <div className="route__item-wrapper">
 
-                <h1 className="heading-page">Work ....</h1>
+                <h1 className="heading-page">Work .....</h1>
 
                 {/*<h1>{this.props.match.url}</h1>*/}
                 <Header
