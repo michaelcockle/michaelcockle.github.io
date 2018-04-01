@@ -2,6 +2,7 @@ import React from 'react';
 import {render} from 'react-dom';
 import App from './components/App';
 import {BrowserRouter as Router, Route, Link, Switch, Match} from 'react-router-dom';
+import axios from 'axios'
 
 import {fetchPosts, getData} from './components/cntful';
 
@@ -9,6 +10,17 @@ fetchPosts();
 
 const url =
           'https://cdn.contentful.com/spaces/xq9fh8s1o76v/entries?access_token=f2b7ef5e7ac493e6714f70081a4d02ce892238ef8546d9e2704247e631f338ee';
+
+//
+//const staticUrl = axios
+//.get('../data/contentful.json')
+//.then(response => {
+//
+//})
+//.catch(function(error) {
+//    console.log(error)
+//})
+
 
 fetchPosts(url).then(
     function (response) {
@@ -37,6 +49,8 @@ fetchPosts(url).then(
             //console.log('Is prop an Array = ', Array.isArray(prop)); // false
 
             console.log('prop = ', prop);
+
+            console.log(Object.entries(prop));
 
             for (const item in prop) {
 
@@ -75,8 +89,6 @@ fetchPosts(url).then(
                 //console.log('value.name = ', value[0]);
 
             }
-
-            // how get index ?
 
             // ["0"].fields
 
